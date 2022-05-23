@@ -24,11 +24,60 @@
     <!--thisPage-->
     <link rel="stylesheet" href="/css/main/main.css">
     <script type="text/javascript" src="/js/main/main.js"></script>
+    <!--include css-->
+    <link rel="stylesheet" href="/css/fragments/header.css">
+    <link rel="stylesheet" href="/css/fragments/footer.css">
+    <!--include js-->
+    <script type="text/javascript" src="/js/fragments/header.js"></script>
+    <script type="text/javascript" src="/js/fragments/footer.js"></script>
     <!--jquery-->
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 
 </head>
-<body>
-    안녕하세요
+<body  style="overflow-x: hidden">
+<div th:include="fragments/header ::header" class="header"></div>
+
+<div class="main">
+    <div class="main-container">
+        <section class="main-container__cover-content content-basic">
+            <div class="main-container__cover-content__wrapper">
+
+            </div>
+        </section>
+
+        <section class="main-container__text-box-content">
+            <div class="main-container__text-box-content__wrapper">
+
+            </div>
+        </section>
+
+        <section class="main-container__intro-content content-basic">
+            <div class="main-container__intro-content__wrapper">
+
+            </div>
+        </section>
+
+        <section class="main-container__decoration-content">
+            <div class="main-container__decoration-content__wrapper">
+
+            </div>
+        </section>
+
+        <section class="main-container__boast-content">
+            <div class="main-container__boast-content__wrapper">
+
+            </div>
+        </section>
+
+        <section class="main-container__services-content">
+            <div class="main-container__services-content__wrapper">
+
+            </div>
+        </section>
+    </div>
+
+    <div th:include="fragments/footer ::footer" class="footer"></div>
+</div>
+
 </body>
 </html>

@@ -1,0 +1,72 @@
+
+.main {
+
+}
+
+.main-container {
+
+}
+
+
+
+
+
+/* cover-content */
+.main-container__cover-content {
+    background: url("/images/main/main.png") no-repeat center center / cover;
+    width: 101%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.main-container__cover-content__wrapper {
+
+}
+
+
+/* text-box-content */
+.main-container__text-box-content {
+
+}
+
+.main-container__text-box-content__wrapper {
+
+}
+
+
+/* intro-content */
+.main-container__intro-content {
+
+}
+
+.main-container__intro-content__wrapper {
+
+}
+
+
+/*  */
+.main-container__decoration-content {
+
+}
+.main-container__decoration-content__wrapper {
+
+}
+
+
+/* boast-content */
+.main-container__boast-content {
+
+}
+.main-container__boast-content__wrapper {
+
+}
+
+
+/* services-content */
+.main-container__services-content {
+
+}
+.main-container__services-content__wrapper {
+
+}
