@@ -1,10 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 
-</body>
+<div th:fragment="header">
+    <div class="header-container">
+        <a class="header-container__company-logo js-header-container__company-logo" onclick="mainHome()"></a>
+        <div class="header-container__main-menu-wrapper">
+            <ul class="header-container__main-menu-wrapper__menu-ul">
+                <li>
+                    <p onclick="businessInfo()">LeCOTTAGE</p>
+                    <ul class="header-container__main-menu-wrapper__menu-ul__detail-menu-ul">
+                        <li onclick="businessInfo()">사업개요</li>
+                        <li onclick="directions()">오시는길</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <p onclick="unit()" class="productList">Unit</p>
+                    <ul class="header-container__main-menu-wrapper__menu-ul__detail-menu-ul">
+                        <li onclick="unit()">A type</li>
+                        <li onclick="unit()">B type</li>
+                        <li onclick="unit()">C type</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <p onclick="amenity()">Service</p>
+                    <ul class="header-container__main-menu-wrapper__menu-ul__detail-menu-ul">
+                        <li onclick="amenity()">Amenity</li>
+                        <li onclick="concierge()">Concierge</li>
+                        <li onclick="premiumInfra()">Premium Infra</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <p  onclick="plan()">Plan</p>
+                    <ul class="header-container__main-menu-wrapper__menu-ul__detail-menu-ul">
+                        <li onclick="plan()">The First Part</li>
+                        <li onclick="plan()">The Second Part</li>
+                        <li onclick="plan()">The Third Part</li>
+                        <li onclick="plan()">The Fourth Part</li>
+                    </ul>
+                </li>
+
+                <li> <p  onclick="contactUs()">Contact Us</p> </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="sub-menu-wrapper"> </div>
+</div>
 </html>
