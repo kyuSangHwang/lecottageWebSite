@@ -1,0 +1,106 @@
+
+.businessInfo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.businessInfo-main-wrapper__img {
+    background-image: url("../../images/main/main.png");
+    width: 99.7vw;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    margin-left: -10px;
+    margin-top: -10px;
+
+}
+
+.businessInfo-summary-wrapper {
+    display: flex;
+    margin-top: 200px;
+    width: 100%;
+}
+
+.businessInfo-summary-wrapper__box {
+    width: 50vw;
+    height: auto;
+    margin-left: -8px;
+    animation: fadeInLeft 1s;
+}
+
+.businessInfo-summary-wrapper__box__img {
+    max-width: 100%;
+    min-width: 725px;
+    height: auto;
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+.businessInfo-summary-wrapper__box__text {
+    font-weight: 500;
+    font-size: 40px;
+    text-align: right;
+    margin-top: 50px;
+    margin-left: 160px;
+    animation: fadeInRight 1s;
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+.businessInfo-summary-wrapper__box__text p:first-child {
+    letter-spacing: .3em;
+    font-size: 16px;
+    color: #a07a4b;
+}
+
+.businessInfo-summary-wrapper__box__text__big {
+    margin-top: 25px;
+}
+
+.businessInfo-summary-wrapper__box__text__big span:nth-child(1){
+    font-weight: 300;
+}
+
+.businessInfo-summary-wrapper__box__text__big p:last-of-type {
+    margin-top: 10px;
+}
+
+.businessInfo-summary-wrapper__box__text__info {
+    font-size: 16px;
+    margin-top: 50px;
+    width: 330px;
+    list-style: none;
+}
+
+.businessInfo-summary-wrapper__box__text__info > li {
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    padding: 10px 0 10px 110px;
+}
+
+.businessInfo-summary-wrapper__box__text__info > li > span:nth-child(1) {
+    width: 90px;
+    position: absolute;
+    text-align: right;
+    left: 0;
+    top: 10px;
+}
