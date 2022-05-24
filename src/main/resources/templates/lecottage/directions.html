@@ -4,12 +4,29 @@
     <meta charset="UTF-8">
     <title>오시는길</title>
 
+<!--    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">-->
+
+
+    <!--thisPage-->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=033ae22a73fc91a9d29f7380f2607ef7"></script>
     <link rel="stylesheet" href="css/lecottage/directions.css">
-    <link rel="stylesheet" href="css/allCss/allCss.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script type="text/javascript" src="/js/lecottage/directions.js"></script>
+    <!--all CSS/JS-->
+    <link rel="stylesheet" href="css/commonCss.css">
+    <!--include css-->
+    <link rel="stylesheet" href="/css/fragments/header.css">
+    <link rel="stylesheet" href="/css/fragments/footer.css">
+    <!--include js-->
+    <script type="text/javascript" src="/js/fragments/header.js"></script>
+    <script type="text/javascript" src="/js/fragments/footer.js"></script>
+    <!--jquery-->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
 
 </head>
 <body>
+<div th:include="fragments/header ::header" class="header"></div>
+
 <div class="directions">
     <div class="directions-container">
 
@@ -25,10 +42,48 @@
             </div>
         </div>
 
-        <div class="directions-map-wrapper">
+        <div class="directions-middle-wrapper">
+            <p>THE CENTER OF YANGPYEONG NEW HEALING PLACE</p>
+            <p>HIGH-END, PRESTIGE HOUSE</p>
+        </div>
 
+        <div class="directions-mapWrap-wrapper">
+            <div id="map" class="directions-mapWrap-wrapper__map"></div>
+                <script>
+                    var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+                    var options = { //지도를 생성할 때 필요한 기본 옵션
+                        center: new kakao.maps.LatLng(37.46191, 127.59366), //지도의 중심좌표.
+                        level: 4 //지도의 레벨(확대, 축소 정도)
+                    };
+
+                    var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+
+                    // 지도에 마커를 생성하고 표시한다
+                    var marker = new kakao.maps.Marker({
+                        position: new kakao.maps.LatLng(37.46191, 127.59366), // 마커의 좌표
+                        map: map // 마커를 표시할 지도 객체
+                    });
+
+                    // 마커 위에 표시할 인포윈도우를 생성한다
+                    var infowindow = new kakao.maps.InfoWindow({
+                        content : '<div style="padding:5px;">르코테지, LeCottage</div>' // 인포윈도우에 표시할 내용
+                    });
+
+                    // 인포윈도우를 지도에 표시한다
+                    infowindow.open(map, marker);
+                </script>
+
+            <div class="directions-mapWrap-wrapper__info">
+                <p>르코테지 오피스</p>
+                <p>경기도 양평군 용문면 용문삼성로 333-13</p>
+                <p>르코테지 현장</p>
+                <p>경기도 양평군 용문면 산2-3 (용문역 차량 12분)</p>
+                <p>픽업 서비스</p>
+                <p>용문역에서 전화하세요 010-0000-0000</p>
+            </div>
         </div>
     </div>
+    <div th:include="fragments/footer ::footer" class="footer"></div>
 </div>
 </body>
 </html>

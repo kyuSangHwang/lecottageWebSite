@@ -8,3 +8,46 @@
     margin-top: -10px;
 }
 
+.directions-middle-wrapper {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 0.015em;
+}
+
+.directions-middle-wrapper > p:nth-child(1){
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.directions-mapWrap-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+
+.directions-mapWrap-wrapper__map {
+    width: 600px;
+    height: 500px;
+    border: 1px solid limegreen;
+}
+
+.directions-mapWrap-wrapper__info {
+    margin-left: 70px;
+}
+
+.directions-mapWrap-wrapper__info > p:nth-child(2n+1) {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.directions-mapWrap-wrapper__info > p:nth-child(2n) {
+    color: #666;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
