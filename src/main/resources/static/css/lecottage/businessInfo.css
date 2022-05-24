@@ -8,7 +8,7 @@
 .businessInfo-main-wrapper__img {
     background-image: url("../../images/main/main.png");
     width: 99.7vw;
-    height: 100vh;
+    height: 101vh;
     background-size: cover;
     display: flex;
     margin-left: -10px;
@@ -19,6 +19,7 @@
 .businessInfo-summary-wrapper {
     display: flex;
     margin-top: 200px;
+    margin-bottom: 200px;
     width: 100%;
 }
 
