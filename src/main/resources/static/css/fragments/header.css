@@ -46,11 +46,11 @@ li{
     float: left;
     width: 190px;
     height: 82px;
-    background-size: contain;
     background-image: url("/images/lecottageLogoNoBackground.png");
     background-repeat: no-repeat;
     background-position: center;
     transition: all 300ms ease-in-out;
+    background-size: 88px;
 }
 
 .header-container__main-menu-wrapper {
@@ -95,15 +95,18 @@ li{
     color: #505050;
 }
 
-/*hover Event*/
 .header:hover {
     transition: 300ms ease-in-out;
     background-color: white !important;
     color: black !important;
 }
 
+.on {
+    background: white;
+}
+
 .header:hover .header-container__company-logo{
-    background-image: url("/images/lecottageLogo.png");
+    background-image: url("/images/lecottageLogoNoBackground.png");
 }
 
 .header:hover .sub-menu-wrapper{
