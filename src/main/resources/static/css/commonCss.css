@@ -1,0 +1,85 @@
+.blackbox {
+    min-width: 820px;
+    width: 50vw;
+    height: 101vh;
+    background-color: black;
+    opacity: 75%;
+    position: relative;
+    color: white;
+    animation: fadeInLeft 1s;
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 0.75;
+        transform: translateX(0%);
+    }
+}
+
+.blackbox > div {
+    margin-left: 310px;
+    margin-top: 320px;
+}
+
+.blackbox > div > p:nth-child(1) {
+    letter-spacing: .2em;
+    font-size: 18px;
+}
+
+.blackbox > div > p:nth-child(2) {
+    letter-spacing: .2em;
+    font-size: 50px;
+    margin-top: 35px;
+}
+
+.blackbox > div > p:nth-child(3) {
+    letter-spacing: .2em;
+    font-size: 18px;
+    color: #a07a4b;
+}
+
+.infoBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.infoText--right {
+    width: 720px;
+    text-align: left;
+    padding-left: 100px;
+}
+
+.infoText--left {
+    width: 720px;
+    text-align: right;
+    padding-right: 100px;
+}
+
+.infoText {
+    letter-spacing: .2em;
+    font-weight: bold;
+    color: #666;
+}
+
+.infoText > p:nth-child(1) {
+    letter-spacing: .3em;
+    color: #a07a4b;
+}
+
+.infoText > p:nth-child(2) {
+    font-size: 40px;
+    color: black;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.infoText > p:nth-of-type(n+2) {
+    margin-top: 8px;
+}
+
