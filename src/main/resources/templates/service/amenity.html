@@ -2,9 +2,108 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>서비스</title>
+
+    <!--thisPage-->
+    <link rel="stylesheet" href="css/service/amenity.css">
+    <script type="text/javascript" src="/js/service/amenity.js"></script>
+    <!--all CSS/JS-->
+    <link rel="stylesheet" href="css/commonCss.css">
+    <!--include css-->
+    <link rel="stylesheet" href="/css/fragments/header.css">
+    <link rel="stylesheet" href="/css/fragments/footer.css">
+    <!--include js-->
+    <script type="text/javascript" src="/js/fragments/header.js"></script>
+    <script type="text/javascript" src="/js/fragments/footer.js"></script>
+    <!--jquery-->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 <body>
+<div th:include="fragments/header ::header" class="header"></div>
+
+<div class="amenity">
+    <div class="amenity-container">
+
+        <div class="amenity-main-wrapper">
+            <div class="amenity-main-wrapper__img">
+                <div class="blackbox">
+                    <div>
+                        <p>HIGH SOCIETY LIFE STYLE</p>
+                        <p>AMENITY</p>
+                        <p>남다른 일상을 사는 사람들의 취향이 모인 하이 소사이어티</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="amenity-middle-wrapper">
+            <span>Only the leaders</span><span> are allowed to</span>
+            <p>own Yangpyeong Le COTTAGE</p>
+            <p>꿈이 현실이 되는 최고의 프레스티지 하우스 땅 바람 구름 자연과 함께 숨쉬는 곳</p>
+            <p>이제 당신이 주인입니다</p>
+        </div>
+
+        <div class="amenity-sec-wrapper">
+            <div class="amenity-sec-wrapper__outDoorStage infoBox">
+                <div class="amenity-sec-wrapper__outDoorStage__img"></div>
+                <div class="amenity-sec-wrapper__outDoorStage__info infoText infoText--right">
+                    <p>Outdoor Stage</p>
+                    <p>야외 공간</p>
+                    <p>야외 수영장, 잔디 광장</p>
+                   <p>그리고 이벤트 광장</p>
+                </div>
+            </div>
+
+            <div class="amenity-sec-wrapper__pool infoBox">
+                <div class="amenity-sec-wrapper__pool__info infoText infoText--left">
+                    <p>Pool</p>
+                    <p>수영장</p>
+                    <p>물의 공간, 감성적인 숲의 공간</p>
+                    <p>(야외 수영장, 단지 내 수영장)</p>
+                </div>
+                <div class="amenity-sec-wrapper__pool__img"></div>
+            </div>
+
+            <div class="amenity-sec-wrapper__mice infoBox">
+                <div class="amenity-sec-wrapper__mice__img"></div>
+                <div class="amenity-sec-wrapper__mice__info infoText infoText--right">
+                    <p>Mice</p>
+                    <p>Mice(convention)</p>
+                    <p>기업회의 (Meeting)</p>
+                    <p>포상관광 (Incentives)</p>
+                    <p>컨벤션 (Convention)</p>
+                    <p>전시 (Exhibition)</p>
+                </div>
+            </div>
+
+            <div class="amenity-sec-wrapper__concertHall infoBox">
+                <div class="amenity-sec-wrapper__concertHall__info infoText infoText--left">
+                    <p>Concert Hall & Cafe</p>
+                    <p>콘서트 홀 & 카페</p>
+                    <p>부드러운 커피 한잔</p>
+                    <p>삶을 풍성하게 하는</p>
+                    <p>음악이 있는 곳</p>
+                </div>
+                <div class="amenity-sec-wrapper__concertHall__img"></div>
+            </div>
+
+            <div class="amenity-sec-wrapper__sauna infoBox">
+                <div class="amenity-sec-wrapper__sauna__img"></div>
+                <div class="amenity-sec-wrapper__sauna__info infoText infoText--right">
+                    <p>Sauna & Spa</p>
+                    <p>사우나 & 스파</p>
+                    <p>혼잡한 일상에서의 탈출</p>
+                    <p>천상의 휴식처</p>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+    <div th:include="fragments/footer ::footer" class="footer"></div>
+</div>
+
 
 </body>
 </html>
