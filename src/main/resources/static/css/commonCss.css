@@ -47,19 +47,19 @@
     justify-content: center;
     align-items: center;
 
-    max-width: 1920px;
+    max-width: 1420px;
     margin: 150px auto;
-    width: 70%;
+    width: 100%;
 }
 
 .infoText--right {
-    width: 720px;
+    width: 750px;
     text-align: left;
     padding-left: 100px;
 }
 
 .infoText--left {
-    width: 720px;
+    width: 750px;
     text-align: right;
     padding-right: 100px;
 }
@@ -90,7 +90,7 @@
 /**/
 /*swiper-container*/
 .swiper-container {
-    width: 65%;
+    width: 61.4%;
     height: 43vh;
 }
 /*swiper-slide*/
