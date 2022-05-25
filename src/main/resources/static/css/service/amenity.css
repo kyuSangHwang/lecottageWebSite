@@ -37,9 +37,7 @@
 
 .amenity-sec-wrapper__outDoorStage__img {
     background-image: url("../../images/service/amenity/outdoorStage1.png");
-    /*width: 42.7vw;*/
-    /*height: 43vh;*/
-    width: 65%;
+    width: 61.4%;
     height: 21vw;
     background-repeat: no-repeat;
     background-size: cover;
