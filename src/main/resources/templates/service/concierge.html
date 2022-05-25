@@ -3,8 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
+    <!--thisPage-->
+    <link rel="stylesheet" href="css/service/concierge.css">
+    <script type="text/javascript" src="/js/service/concierge.js"></script>
+    <!--all CSS/JS-->
+    <link rel="stylesheet" href="css/commonCss.css">
+    <!--include css-->
+    <link rel="stylesheet" href="/css/fragments/header.css">
+    <link rel="stylesheet" href="/css/fragments/footer.css">
+    <!--include js-->
+    <script type="text/javascript" src="/js/fragments/header.js"></script>
+    <script type="text/javascript" src="/js/fragments/footer.js"></script>
+    <!--jquery-->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 </head>
+
 <body>
+<div th:include="fragments/header ::header" class="header"></div>
+
+<div class="concierge">
+    <div class="concierge-container">
+
+        <div class="concierge-main-wrapper">
+            <div class="concierge-main-wrapper__img">
+                <div class="blackbox">
+                    <div>
+                        <p>HIGH SOCIETY LIFE STYLE</p>
+                        <p>concierge</p>
+                        <p>남다른 일상을 사는 사람들의 취향이 모인 하이 소사이어티</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="amenity-middle-wrapper">
+            <span>Only the leaders</span><span> are allowed to</span>
+            <p>own Yangpyeong Le COTTAGE</p>
+            <p>꿈이 현실이 되는 최고의 프레스티지 하우스 땅 바람 구름 자연과 함께 숨쉬는 곳</p>
+            <p>이제 당신이 주인입니다</p>
+        </div>
+
+        <div class="amenity-sec-wrapper">
+            <div class="amenity-sec-wrapper__outDoorStage infoBox">
+                <div class="amenity-sec-wrapper__outDoorStage__img"></div>
+                <div class="amenity-sec-wrapper__outDoorStage__info infoText infoText--right">
+                    <p>Outdoor Stage</p>
+                    <p>야외 공간</p>
+                    <p>야외 수영장, 잔디 광장</p>
+                    <p>그리고 이벤트 광장</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="concierge-">
+
+
+        </div>
+    </div>
+    <div th:include="fragments/footer ::footer" class="footer"></div>
+</div>
+
 
 </body>
 </html>

@@ -5,10 +5,11 @@
     <title>서비스</title>
 
     <!--thisPage-->
-    <link rel="stylesheet" href="css/service/amenity.css">
+    <link rel="stylesheet" href="/css/service/amenity.css">
     <script type="text/javascript" src="/js/service/amenity.js"></script>
     <!--all CSS/JS-->
-    <link rel="stylesheet" href="css/commonCss.css">
+    <link rel="stylesheet" href="/css/commonCss.css">
+    <link rel="stylesheet" href="/js/commonJs.js">
     <!--include css-->
     <link rel="stylesheet" href="/css/fragments/header.css">
     <link rel="stylesheet" href="/css/fragments/footer.css">
@@ -17,6 +18,9 @@
     <script type="text/javascript" src="/js/fragments/footer.js"></script>
     <!--jquery-->
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <!--swiper-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
 </head>
 <body>
 <div th:include="fragments/header ::header" class="header"></div>
@@ -61,11 +65,52 @@
                     <p>물의 공간, 감성적인 숲의 공간</p>
                     <p>(야외 수영장, 단지 내 수영장)</p>
                 </div>
-                <div class="amenity-sec-wrapper__pool__img"></div>
+
+                <div class="swiper-container swiper mySwiper">
+                    <!-- 보여지는 영역 -->
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="/images/service/amenity/pool/pool1.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/images/service/amenity/pool/pool2.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/images/service/amenity/pool/pool3.png" />
+                        </div>
+                    </div>
+                    <!-- 방향 버튼 -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <!-- 페이징 버튼 -->
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
 
             <div class="amenity-sec-wrapper__mice infoBox">
-                <div class="amenity-sec-wrapper__mice__img"></div>
+                <div class="swiper-container swiper mySwiper">
+                    <!-- 보여지는 영역 -->
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="/images/service/amenity/mice/mice1.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/images/service/amenity/mice/mice2.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/images/service/amenity/mice/mice3.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/images/service/amenity/mice/mice4.png" />
+                        </div>
+                    </div>
+                    <!-- 방향 버튼 -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <!-- 페이징 버튼 -->
+                    <div class="swiper-pagination"></div>
+                </div>
+
                 <div class="amenity-sec-wrapper__mice__info infoText infoText--right">
                     <p>Mice</p>
                     <p>Mice(convention)</p>
@@ -84,11 +129,55 @@
                     <p>삶을 풍성하게 하는</p>
                     <p>음악이 있는 곳</p>
                 </div>
-                <div class="amenity-sec-wrapper__concertHall__img"></div>
+
+                <div class="swiper-container swiper mySwiper">
+                    <!-- 보여지는 영역 -->
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="/images/service/amenity/concertHall&cafe/cafe1.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/images/service/amenity/concertHall&cafe/cafe2.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/images/service/amenity/concertHall&cafe/concertHall1.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/images/service/amenity/concertHall&cafe/concertHall2.png" />
+                        </div>
+                    </div>
+                    <!-- 방향 버튼 -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <!-- 페이징 버튼 -->
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
 
             <div class="amenity-sec-wrapper__sauna infoBox">
-                <div class="amenity-sec-wrapper__sauna__img"></div>
+                <div class="swiper-container swiper mySwiper">
+                    <!-- 보여지는 영역 -->
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="/images/service/amenity/sauna&spa/sauna1.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/images/service/amenity/sauna&spa/sauna2.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/images/service/amenity/sauna&spa/sauna3.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/images/service/amenity/sauna&spa/sauna4.png" />
+                        </div>
+                    </div>
+                    <!-- 방향 버튼 -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <!-- 페이징 버튼 -->
+                    <div class="swiper-pagination"></div>
+                </div>
+
                 <div class="amenity-sec-wrapper__sauna__info infoText infoText--right">
                     <p>Sauna & Spa</p>
                     <p>사우나 & 스파</p>
@@ -103,6 +192,33 @@
     </div>
     <div th:include="fragments/footer ::footer" class="footer"></div>
 </div>
+
+<!--head안에 쓰면안된다. 자바스크립트는 body안에서 맨 마지막에 <script>를 열어주고 써줘야한다.
+이유는 자바스크립트는 내용이 되는 html파일을 다 읽고 그 동작을 추가하기 때문에
+<head>안에 쓰면 내용도 없는데 먼저 실행된것과 마찬가지이다 -->
+<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+
+        //무한루프일때, true
+        loop: true,
+        //키보드로 슬라이드
+        keyboard: {
+            enabled: true,
+        },
+        //네이게이션 버튼 관련 자바스크립트
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        //
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+    });
+</script>
 
 
 </body>

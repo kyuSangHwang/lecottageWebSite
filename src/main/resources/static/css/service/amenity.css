@@ -4,8 +4,6 @@
     height: 101vh;
     background-size: cover;
     display: flex;
-    margin-left: -10px;
-    margin-top: -10px;
 }
 
 .amenity-middle-wrapper {
@@ -38,42 +36,12 @@
 }
 
 .amenity-sec-wrapper__outDoorStage__img {
-    /*background-image: url("../../images/service/amenity/concertHall.png");*/
-    background-image: url("/static/images/service/amenity/concertHall.png");
-    width: 42.7vw;
-    height: 43vh;
+    background-image: url("../../images/service/amenity/outdoorStage1.png");
+    /*width: 42.7vw;*/
+    /*height: 43vh;*/
+    width: 65%;
+    height: 21vw;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.amenity-sec-wrapper__pool__img {
-    background-image: url("../../images/service/amenity/concertHall.png");
-    width: 42.7vw;
-    height: 43vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.amenity-sec-wrapper__mice__img {
-    background-image: url("../../images/service/amenity/concertHall.png");
-    width: 42.7vw;
-    height: 43vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.amenity-sec-wrapper__concertHall__img {
-    background-image: url("../../images/service/amenity/concertHall.png");
-    width: 42.7vw;
-    height: 43vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.amenity-sec-wrapper__sauna__img {
-    background-image: url("../../images/service/amenity/concertHall.png");
-    width: 42.7vw;
-    height: 43vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-}

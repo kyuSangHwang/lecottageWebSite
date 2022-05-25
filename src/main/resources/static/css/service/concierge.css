@@ -1,0 +1,7 @@
+.concierge-main-wrapper__img {
+    background-image: url("../../images/lecottage/directions/directions.png");
+    width: 99.3vw;
+    height: 101vh;
+    background-size: cover;
+    display: flex;
+}
