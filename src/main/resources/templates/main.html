@@ -21,11 +21,18 @@
 
     <title>LE COTTAGE</title>
 
-
-
+    <!--jquery-->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <!--Swiper css/js-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <!--thisPage-->
     <link rel="stylesheet" href="/css/main/main.css">
     <script type="text/javascript" src="/js/main/main.js"></script>
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Oswald&display=swap" rel="stylesheet">
     <!--include css-->
     <link rel="stylesheet" href="/css/fragments/header.css">
     <link rel="stylesheet" href="/css/fragments/footer.css">
@@ -34,10 +41,6 @@
     <script type="text/javascript" src="/js/fragments/footer.js"></script>
     <!--AOS Animate On Scroll Library-->
 <!--    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">-->
-    <!--jquery-->
-    <script  src="https://code.jquery.com/jquery-latest.min.js"></script>
-
-
 
 </head>
 <body  style="overflow-x: hidden">
@@ -69,47 +72,269 @@
 
         <section class="main-container__intro-content">
             <div class="main-container__intro-content__wrapper">
-                <div class="main-container__intro-content__wrapper__box">
-                    <ul>
-                        <li class="img right aos-init aos-animate" data-aos="fade-left" data-aos-delay="400">
-                            <img src="/images/main/main.png" alt="">
-                        </li>
-
-                        <li class="txt left">
-                            <h3>
-                                <b>더 높은 품격</b>을 <br>​
-                                완성하는 단 하나의 공간​ <br>
-                                <strong>HERMETIA</strong></h3>
-                            <p>하이엔드 주거 가치와 기술력의 만남으로 완성한 <br>​
-                                당신을 위한 진정한 럭셔리 하우스 <br>​
-                                에르메티아 서초​</p>
-                        </li>
-                    </ul>
+                <div class="main-container__intro-content__wrapper__first-box">
+                    <div class="main-container__intro-content__wrapper__first-box__title">
+                        <h3>LeCOTTAGE <b>First Part on Sale</b></h3>
+                        <p>첫 번째 분양 중인 <b>"주거형 오피스텔"</b>의 다양한 Unit</p>
+                    </div>
                 </div>
 
+                <div class="main-container__intro-content__wrapper__second-box">
+                    <div class="main-container__intro-content__wrapper__second-box_content">
+                        <p>Unit A</p>
+                        <div class="main-container__intro-content__wrapper__second-box_content__image">
+                            <img src="/images/unit/unitA/unitAMain.png" alt="" class="c">
+                        </div>
+                    </div>
 
+                    <div class="main-container__intro-content__wrapper__second-box_content">
+                        <p>Unit B</p>
+                        <div class="main-container__intro-content__wrapper__second-box_content__image">
+                            <img src="/images/unit/unitB/unitBMain.png" alt="" class="c">
+                        </div>
+                    </div>
 
-
-
+                    <div class="main-container__intro-content__wrapper__second-box_content">
+                        <p>Unit C</p>
+                        <div class="main-container__intro-content__wrapper__second-box_content__image">
+                            <img src="/images/unit/unitC/unitCMain.png" alt="" class="c">
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section class="main-container__decoration-content">
             <div class="main-container__decoration-content__wrapper">
+                <div class="main-container__decoration-content__wrapper__first-text">
+                    <p>New Luxury</p>
+                    <p>New Space</p>
+                    <p>New Solution</p>
+                    <p>New Life</p>
+                </div>
 
+                <div class="main-container__decoration-content__wrapper__second-text">
+                    <strong>Le COTTAGE : "ALL - IN - ONE"</strong>
+                </div>
             </div>
         </section>
 
         <section class="main-container__boast-content">
             <div class="main-container__boast-content__wrapper">
+                <ul>
+                    <li class="img right">
+                        <img src="/images/lecottage/businessInfo/businessInfoOverview.jpg" alt="">
+                    </li>
+                    <li class="txt left">
+                        <h3>
+                            <b>자연과 함께 당신의 가치와 품격</b>을 <br>
+                            완성하는 단 하나의 공간 <br>
+                            <strong>LeCOTTAGE</strong>
+                        </h3>
 
+                        <p>
+                            오직 최소에 만족하는 당신을 위한 <br>
+                            하이엔드 주거 가치와 자연의 만남으로 완성된  <br>
+                            럭셔리 힐링 하우스, 르코테지
+                        </p>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li class="img left">
+                        <img src="/images/main/prestigeModernInterior.jpg" alt="">
+                    </li>
+                    <li class="txt right main-container__boast-content__wrapper__txt-under">
+                        <h3>
+                            <b>모던함</b>이 깃든 <br>
+                            여백이 주는 <b>아름다움</b>
+                        </h3>
+
+                        <p>
+                            비움은 무(無)가 아니라 <br>
+                            미래에 채워질 공간입니다. <br><br>
+                        </p>
+
+                        <p>
+                            당신에 의해 <br>
+                            완성되어 나갈 <br>
+                            <b>프리스티지 하우스</b>
+                        </p>
+                    </li>
+                </ul>
             </div>
         </section>
 
         <section class="main-container__services-content">
             <div class="main-container__services-content__wrapper">
 
+                <div class="main-gallery">
+                    <div class="tit wr">
+                        <h3 class="aos-init aos-animate">Think about <b>Real Nature High-end</b></h3>
+                        <p class="aos-init aos-animate">본질에 집중한 최상의 힐링 하우스</p>
+                    </div>
+                    <div class="asd">
+                        <div class="swiper mySwiper1">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="img">
+                                        <h3>Concierge</h3>
+                                        <p>세탁 서비스</p>
+                                    </div>
+                                    <img src="/images/main/test.jpeg" alt="">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="img">
+                                        <h3>Concierge</h3>
+                                        <p>세탁 서비스</p>
+                                    </div>
+                                    <img src="/images/main/test.jpeg" alt="">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="img">
+                                        <h3>Concierge</h3>
+                                        <p>세탁 서비스</p>
+                                    </div>
+                                    <img src="/images/main/test.jpeg" alt="">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="img">
+                                        <h3>Concierge</h3>
+                                        <p>세탁 서비스</p>
+                                    </div>
+                                    <img src="/images/main/test.jpeg" alt="">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="img">
+                                        <h3>Concierge</h3>
+                                        <p>세탁 서비스</p>
+                                    </div>
+                                    <img src="/images/main/test.jpeg" alt="">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="img">
+                                        <h3>Concierge</h3>
+                                        <p>세탁 서비스</p>
+                                    </div>
+                                    <img src="/images/main/test.jpeg" alt="">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="img">
+                                        <h3>Concierge</h3>
+                                        <p>세탁 서비스</p>
+                                    </div>
+                                    <img src="/images/main/test.jpeg" alt="">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="img">
+                                        <h3>Concierge</h3>
+                                        <p>세탁 서비스</p>
+                                    </div>
+                                    <img src="/images/main/test.jpeg" alt="">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="img">
+                                        <h3>Concierge</h3>
+                                        <p>세탁 서비스</p>
+                                    </div>
+                                    <img src="/images/main/test.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+
+                    <div class="asd">
+                        <div class="swiper mySwiper2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="/images/main/prestigeModernInterior.jpg" alt="">
+                                    <div class="img">
+                                        <h3>Concierge</h3>
+                                        <p>세탁 서비스</p>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="/images/main/prestigeModernInterior.jpg" alt="">
+                                    <div class="img">
+                                        <h3>Concierge</h3>
+                                        <p>세탁 서비스</p>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="/images/main/prestigeModernInterior.jpg" alt="">
+                                    <div class="img">
+                                        <h3>Amenity</h3>
+                                        <p>세탁 서비스</p>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="/images/main/prestigeModernInterior.jpg" alt="">
+                                    <div class="img">
+                                        <h3>Amenity</h3>
+                                        <p>세탁 서비스</p>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="/images/main/prestigeModernInterior.jpg" alt="">
+                                    <div class="img">
+                                        <h3>Amenity</h3>
+                                        <p>세탁 서비스</p>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="/images/main/prestigeModernInterior.jpg" alt="">
+                                    <div class="img">
+                                        <h3>Amenity</h3>
+                                        <p>세탁 서비스</p>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="/images/main/prestigeModernInterior.jpg" alt="">
+                                    <div class="img">
+                                        <h3>Amenity</h3>
+                                        <p>세탁 서비스</p>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="/images/main/prestigeModernInterior.jpg" alt="">
+                                    <div class="img">
+                                        <h3>Amenity</h3>
+                                        <p>세탁 서비스</p>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="/images/main/prestigeModernInterior.jpg" alt="">
+                                    <div class="img">
+                                        <h3>Amenity</h3>
+                                        <p>세탁 서비스</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </section>
     </div>
 
