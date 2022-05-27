@@ -59,10 +59,25 @@
 
 .premiumInfra-sec-wrapper {
     flex-wrap: wrap;
+    margin-bottom: 150px;
 }
 
 .premiumInfra-sec-wrapper--lay {
     margin-bottom: 0px !important;
+}
+
+.premiumInfra-sec-wrapper-wr > li:nth-child(1) > div {
+    text-align: left;
+    margin-top: 110px;
+}
+
+.premiumInfra-sec-wrapper-wr > li:nth-child(2) > div {
+    text-align: right;
+    margin-top: 110px;
+}
+
+.premiumInfra-sec-wrapper-wr > li:nth-child(2) > img {
+    float: right;
 }
 
 .premiumInfra-middle-wrapper {
@@ -102,14 +117,19 @@
     object-fit: cover;
 }
 
-.premiumInfra-sec-wrapper-wr > li:nth-child(2) > img {
+.premiumInfra-sec-wrapper__golf__img {
+    object-position: 50% 50%;
+}
+
+.premiumInfra-sec-wrapper__waterLeisure__img {
     object-position: 50% 90%;
 }
 
-.premiumInfra-sec-wrapper-wr > li:nth-child(3) > img {
+.premiumInfra-sec-wrapper__forestLodge__img {
     object-position: 50% 75%;
 }
 
-.premiumInfra-sec-wrapper-wr > li:nth-child(3) > img {
+.premiumInfra-sec-wrapper__ski__img {
     object-position: 50% 100%;
 }
+
