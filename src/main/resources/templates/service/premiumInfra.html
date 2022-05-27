@@ -3,8 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
+    <!--thisPage-->
+    <link rel="stylesheet" href="/css/service/premiumInfra.css">
+    <script type="text/javascript" src="/js/service/premiumInfra.js"></script>
+    <!--all CSS/JS-->
+    <link rel="stylesheet" href="/css/commonCss.css">
+    <!--include css-->
+    <link rel="stylesheet" href="/css/fragments/header.css">
+    <link rel="stylesheet" href="/css/fragments/footer.css">
+    <!--include js-->
+    <script type="text/javascript" src="/js/fragments/header.js"></script>
+    <script type="text/javascript" src="/js/fragments/footer.js"></script>
+    <!--jquery-->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap" rel="stylesheet">
 </head>
-<body>
+<body style="overflow-x: hidden">
+<div th:include="fragments/header ::header" class="header"></div>
+<div class="premiumInfra">
+    <div class="premiumInfra-container">
+
+        <div class="premiumInfra-main-wrapper">
+            <div class="premiumInfra-main-wrapper__img">
+                <div class="blackbox">
+                    <div>
+                        <p>HIGH SOCIETY LIFE STYLE</p>
+                        <p>PREMIUM INFRA</p>
+                        <p>남다른 일상을 사는 사람들의 취향이 모인 하이 소사이어티</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="premiumInfra-sec-wrapper infoBox">
+            <div class="premiumInfra-sec-wrapper__traffic">
+                <div class="premiumInfra-sec-wrapper__traffic__info">
+                    <p>Only 30 Minute</p>
+                    <p>수상스포츠, 골프, 글램핑 등 시즌 별 레저는 물론</p>
+                    <p>문화갤러리와 천혜의 자연에 이르기까지</p>
+                    <p>서울에서 30분</p>
+                </div>
+                <img class="premiumInfra-sec-wrapper__traffic__img" src="/images/service/premiumInfra/traffic.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="premiumInfra-sec-wrapper premiumInfra-sec-wrapper--lay infoBox">
+
+            <div class="premiumInfra-middle-wrapper">
+                <p>One-stop life infrastructure</p>
+                <p>생활의 품격을 업그레이드하는</p>
+                <p>프리미엄 인프라</p>
+            </div>
+
+            <ul class="premiumInfra-sec-wrapper premiumInfra-sec-wrapper-wr dp">
+                <li>
+                    <img src="/images/service/premiumInfra/golf.jpg" class="premiumInfra-sec-wrapper__golf__info" alt=""/>
+                    <div class="premiumInfra-sec-wrapper__golf__info infoText dp-right">
+                        <p>Golf Field</p>
+                        <p>골프장</p>
+<!--                        <p>호텔 객실에 고객의 요청으로</p> -->
+<!--                        <p>음료, 식사 등을 보내주는 식사 서비스</p>-->
+                    </div>
+                </li>
+                <li>
+                    <div class="premiumInfra-sec-wrapper__waterLeisure__info infoText dp-left">
+                        <p>Water Leisure</p>
+                        <p>수상 레저</p>
+<!--                        <p>의류 본연의 상태를 유지할 수 있도록</p>-->
+<!--                        <p>옷감 손상을 최소화하고</p>-->
+<!--                        <p>다양한 의류들에 적합한 맞춤형세탁서비스</p>-->
+                    </div>
+                    <img src="/images/service/premiumInfra/waterLeisure.jpg" class="premiumInfra-sec-wrapper__waterLeisure__img" alt=""/>
+                </li>
+            </ul>
+
+            <div class="premiumInfra-middle-wrapper">
+                <p>누군가의 휴가는</p>
+                <p>당신에겐 일상입니다</p>
+            </div>
+
+            <ul class="premiumInfra-sec-wrapper premiumInfra-sec-wrapper-wr dp">
+                <li>
+                    <img src="/images/service/premiumInfra/forestLodge.jpg" class="premiumInfra-sec-wrapper__forestLodge__img" alt=""/>
+                    <div class="premiumInfra-sec-wrapper__forestLodge__info infoText dp-right">
+                        <p>Forest Lodge</p>
+                        <p>휴양림</p>
+<!--                        <p>전문화된 인력과 쳬계적인 시스템을 통해</p>-->
+<!--                        <p>쾌적한 환경을 제공하는</p>-->
+<!--                        <p>청소·소독·방역 서비스</p>-->
+                    </div>
+                </li>
+                <li>
+                    <div class="premiumInfra-sec-wrapper__ski__info infoText dp-left">
+                        <p>Ski Resort</p>
+                        <p>스키장</p>
+<!--                        <p>독채 혹은 객실에서 보관하기 힘든 물품들을</p>-->
+<!--                        <p>보관해주는 서비스</p>-->
+                    </div>
+                    <img src="/images/service/premiumInfra/ski.jpg" class="premiumInfra-sec-wrapper__ski__img" alt=""/>
+                </li>
+            </ul>
+        </div>
+    <div th:include="fragments/footer ::footer" class="footer"></div>
+</div>
 
 </body>
 </html>

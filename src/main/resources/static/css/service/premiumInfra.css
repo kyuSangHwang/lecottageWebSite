@@ -1,0 +1,135 @@
+.premiumInfra-main-wrapper {
+    overflow: hidden;
+}
+
+.premiumInfra-main-wrapper__img {
+    background-image: url("../../images/service/premiumInfra/premiumInfraMain1.jpg");
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+}
+
+
+
+
+
+.premiumInfra-sec-wrapper__traffic {
+    width: 100%;
+}
+
+.premiumInfra-sec-wrapper__traffic > img {
+    width: 100%;
+    height: 32vw;
+    min-width: 1300px;
+    min-height: 482px;
+
+}
+
+.premiumInfra-sec-wrapper__traffic__info {
+    text-align: center;
+    color: #666;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.215em;
+}
+
+.premiumInfra-sec-wrapper__traffic__info > p {
+    margin-top: 10px;
+}
+
+.premiumInfra-sec-wrapper__traffic__info > p:nth-child(1) {
+    font-size: 60px;
+    font-weight: 900;
+    letter-spacing: 0.415em;
+    margin-bottom: 20px;
+    color: darkgoldenrod;
+}
+
+.premiumInfra-sec-wrapper__traffic__info > p:nth-child(4) {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 0.3em;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    color: darkblue;
+}
+
+.premiumInfra-sec-wrapper {
+    flex-wrap: wrap;
+    margin-bottom: 150px;
+}
+
+.premiumInfra-sec-wrapper--lay {
+    margin-bottom: 0px !important;
+}
+
+.premiumInfra-sec-wrapper-wr > li:nth-child(1) > div {
+    text-align: left;
+    margin-top: 110px;
+}
+
+.premiumInfra-sec-wrapper-wr > li:nth-child(2) > div {
+    text-align: right;
+    margin-top: 110px;
+}
+
+.premiumInfra-sec-wrapper-wr > li:nth-child(2) > img {
+    float: right;
+}
+
+.premiumInfra-middle-wrapper {
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 0.215em;
+}
+
+.premiumInfra-middle-wrapper > p:nth-child(1) {
+    font-size: 24px;
+    font-weight: 400;
+    color: #666;
+}
+
+.premiumInfra-middle-wrapper > p:nth-child(2) {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.premiumInfra-middle-wrapper > p:nth-child(4) {
+    color: #666;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.premiumInfra-middle-wrapper > p:nth-child(5) {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.premiumInfra-sec-wrapper > li > img {
+    width: 50%;
+    height: 330px;
+    object-fit: cover;
+}
+
+.premiumInfra-sec-wrapper__golf__img {
+    object-position: 50% 50%;
+}
+
+.premiumInfra-sec-wrapper__waterLeisure__img {
+    object-position: 50% 90%;
+}
+
+.premiumInfra-sec-wrapper__forestLodge__img {
+    object-position: 50% 75%;
+}
+
+.premiumInfra-sec-wrapper__ski__img {
+    object-position: 50% 100%;
+}
+

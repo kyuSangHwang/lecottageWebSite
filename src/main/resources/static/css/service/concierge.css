@@ -1,7 +1,137 @@
+.concierge-main-wrapper {
+    overflow: hidden;
+}
+
 .concierge-main-wrapper__img {
-    background-image: url("../../images/lecottage/directions/directions.png");
-    width: 99.3vw;
-    height: 101vh;
+    background-image: url("../../images/service/concierge/conciergeMain.jpg");
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
     display: flex;
+}
+
+.concierge-middle-wrapper {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 0.015em;
+}
+
+.concierge-middle-wrapper > span:nth-child(2) {
+    font-weight: 300;
+}
+
+.concierge-middle-wrapper > p:nth-child(3) {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.concierge-middle-wrapper > p:nth-child(4) {
+    color: #666;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.concierge-middle-wrapper > p:nth-child(5) {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.concierge-sec-wrapper {
+    display: flex;
+    align-items: center;
+    max-width: 1445px;
+    margin: 50px auto 300px !important;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.infoBox > ul {
+    display: inline-block;
+    width: 90%;
+}
+
+.infoBox > ul:nth-child(1) > li:nth-child(1) {
+    margin-bottom: 150px;
+}
+
+.infoBox > ul:nth-child(1) > li:nth-child(2) {
+    width: 53%;
+    float: left;
+    text-align: left;
+}
+
+.infoBox > ul:nth-child(1) > li:nth-child(3) {
+    width: 46%;
+    float: right;
+    margin-top: 200px;
+    text-align: right;
+}
+
+.infoBox > ul:nth-child(1) > li:nth-child(n+4) {
+    width: 46%;
+    float: right;
+    text-align: right;
+}
+
+.concierge-sec-wrapper__conciergeDesk__img {
+    width: 46%;
+}
+
+.concierge-sec-wrapper__conciergeDesk__info {
+    display: inline-block;
+    width: 50%;
+    min-width: 486px;
+    float: right;
+    text-align: end;
+    margin-top: 92px !important;
+}
+
+.concierge-sec-wrapper__cleaning__img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+}
+
+.concierge-sec-wrapper__turnDown__img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+}
+
+.concierge-sec-wrapper__room__img {
+    object-position: 50% 100%;
+}
+
+.concierge-sec-wrapper__laundry__img {
+    object-position: 50% 20%;
+}
+
+.concierge-sec-wrapper__lifeCare__img {
+    object-position: 50% 90%;
+}
+
+.concierge-sec-wrapper__storage__img {
+    object-position: 50% 0;
+}
+
+.concierge-sec-wrapper__pickUp__img {
+    object-position: 50% 50%;
+}
+
+.concierge-sec-wrapper__housekeeper__img {
+    object-position: 50% 0;
+}
+
+.concierge-sec-wrapper__breakfast__img {
+    object-position: 50% 50%;
+}
+
+.concierge-sec-wrapper__bbq__img {
+    object-position: 50% 50%;
 }
