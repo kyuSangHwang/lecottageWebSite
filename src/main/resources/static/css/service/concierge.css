@@ -104,3 +104,34 @@
     object-fit: cover;
 }
 
+.concierge-sec-wrapper__room__img {
+    object-position: 50% 100%;
+}
+
+.concierge-sec-wrapper__laundry__img {
+    object-position: 50% 20%;
+}
+
+.concierge-sec-wrapper__lifeCare__img {
+    object-position: 50% 90%;
+}
+
+.concierge-sec-wrapper__storage__img {
+    object-position: 50% 0;
+}
+
+.concierge-sec-wrapper__pickUp__img {
+    object-position: 50% 50%;
+}
+
+.concierge-sec-wrapper__housekeeper__img {
+    object-position: 50% 0;
+}
+
+.concierge-sec-wrapper__breakfast__img {
+    object-position: 50% 50%;
+}
+
+.concierge-sec-wrapper__bbq__img {
+    object-position: 50% 50%;
+}
