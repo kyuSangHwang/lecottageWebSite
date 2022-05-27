@@ -1,0 +1,166 @@
+ul {
+    list-style: none;
+}
+
+.unit {
+
+}
+
+.unit-container {
+
+}
+/***** Cover *****/
+.unit-container__cover-wrapper {
+    overflow: hidden;
+}
+
+.unit-container__cover-wrapper__img {
+    background-image: url("../../images/unit/unitCover.jpg");
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/***** Unit *****/
+.unit-container__unit-wrapper {
+
+}
+
+.wr-1420 {
+    max-width: 1420px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.sub-con-tit {
+    text-align: center;
+    padding: 150px 0 100px;
+}
+
+.sub-con-tit .tit {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.sub-con-tit .txt {
+    color: #999;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+img {
+    vertical-align: top;
+}
+img {
+    display: inline-block;
+    border: none;
+    vertical-align: baseline;
+    max-width: 100%;
+}
+
+.unit .type-tit {
+    position: relative;
+    margin: 50px 0;
+}
+
+.unit .type-tit .txt {
+    width: 60%;
+}
+
+.unit .txt h3 {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.unit .txt h3 small {
+    display: block;
+    color: #a07a4b;
+    letter-spacing: .3em;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.unit .type-tit .gt {
+    color: #999;
+    font-size: 16px;
+    display: block;
+    margin-top: 5px;
+}
+
+span {
+    vertical-align: middle;
+}
+
+.unit .type-tit .img {
+    position: absolute;
+    right: 0;
+    top: 100px;
+    max-width: 63%;
+}
+
+.unit .type-info {
+    width: 30%;
+}
+
+.unit .txt h3 {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+b {
+    font-weight: bold;
+}
+
+.unit .type-info .txt ul {
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+.unit .type-info .txt ul li {
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    padding: 10px 0 10px 110px;
+}
+
+.unit .type-info .txt ul li b {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.unit .type-info .txt ul li p {
+    color: #666;
+    font-weight: 400;
+}
+
+.unit .type-info .txt ul li:after {
+    content: '';
+    width: 100px;
+    border-bottom: 1px solid #a07a4b;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+}
+
+.unit .type-info .img {
+    margin-top: 100px;
+}
+
+.unit .type-info .img img {
+    border: 1px solid #ddd;
+}
+
+.unit .bg-txt {
+    text-align: center;
+    margin: 140px 0 100px;
+}
+

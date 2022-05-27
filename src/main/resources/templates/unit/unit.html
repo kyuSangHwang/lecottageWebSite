@@ -2,9 +2,126 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <title>Unit</title>
 
+    <!--jquery-->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <!--all CSS/JS-->
+    <link rel="stylesheet" href="/css/commonCss.css">
+    <link rel="stylesheet" href="/js/commonJs.js">
+    <!--thisPage-->
+    <link rel="stylesheet" href="/css/unit/unit.css">
+    <script type="text/javascript" src="/js/unit/unit.js"></script>
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap" rel="stylesheet">
+    <!--include css/js-->
+    <link rel="stylesheet" href="/css/fragments/header.css">
+    <link rel="stylesheet" href="/css/fragments/footer.css">
+    <script type="text/javascript" src="/js/fragments/header.js"></script>
+    <script type="text/javascript" src="/js/fragments/footer.js"></script>
+
+</head>
+<body style="overflow-x: hidden">
+<div th:include="fragments/header ::header" class="header"></div>
+
+<div class="unit">
+    <div class="unit-container">
+        <section class="unit-container__cover-wrapper">
+                <div class="unit-container__cover-wrapper__img">
+                    <div class="blackbox">
+                        <div>
+                            <p>THIS IS HOW LIFE IS <br></p>
+                            <p>UNIT</p>
+                            <p>당신이 상상하는 그 이상의 힐링공간</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <div class="unit-container__unit-wrapper">
+            <div id="unitA">
+                <div class="unit-container__unit-wrapper__unit-a unit-container__unit-wrapper__content">
+
+                </div>
+
+            <div class="unit">
+                <div id="A" class="section">
+                    <div class="wr-1420">
+                        <div class="sub-con-tit aos-init aos-animate" data-aos="fade-up">
+                            <h3 class="tit">
+                                <strong>A</strong> TYPE
+                            </h3>
+                            <p class="txt">바쁜 도시 라이프에서 당신만의 템포를 찾다</p>
+                        </div>
+                        <div class="back-img">
+                            <img src="/images/unit/unitCover.jpg" alt="">
+                        </div>
+                        <div class="type-tit">
+                            <div class="txt aos-init" data-aos="fade-up">
+                                <h3>
+                                    <small>A good home must be made, not bought.</small>
+                                    <b>좋은 집이란 사는 것이 아니라 <br>만들어지는 것이어야 한다.</b>
+                                    <span class="gt">- Joyce Maynard -</span>
+                                </h3>
+                            </div>
+                            <div class="img aos-init" data-aos="fade-left">
+                                <img src="/images/unit/unitCover.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="type-info aos-init" data-aos="fade-up">
+                            <div class="txt">
+                                <h3><b>A</b> Type</h3>
+                                <ul>
+                                    <li>
+                                        <b>전용면적</b>
+                                        <p>48.0200㎡</p>
+                                    </li>
+                                    <li>
+                                        <b>공급면적</b>
+                                        <p>62.0575㎡</p>
+                                    </li>
+                                    <li>
+                                        <b>계약면적</b>
+                                        <p>80.8019㎡</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="img">
+                                <img src="/images/unit/unitCover.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-txt aos-init" data-aos="fade-up">
+                        <img src="/images/unit/unitCover.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+            </div>
+
+            <div id="unitB">
+                <div class="unit-container__unit-wrapper__unit-b unit-container__unit-wrapper__content">
+
+                </div>
+            </div>
+
+            <div id="unitC">
+                <div class="unit-container__unit-wrapper__unit-c unit-container__unit-wrapper__content">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+<div th:include="fragments/footer ::footer" class="footer"></div>
 </body>
 </html>
