@@ -24,15 +24,19 @@
     font-weight: 300;
 }
 
-.amenity-middle-wrapper > p:nth-child(4) {
-    color: #666;
-    font-size: 18px;
-    font-weight: 400;
-    margin-top: 20px;
+.amenity-middle-wrapper > span:nth-child(4) {
+    font-weight: 300;
 }
 
 .amenity-middle-wrapper > p:nth-child(5) {
-    margin-top: 15px;
+    color: #666;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+.amenity-middle-wrapper > p:nth-child(6) {
+    margin-top: 20px;
     font-size: 18px;
     font-weight: 700;
 }
@@ -45,4 +49,16 @@
     background-size: cover;
 }
 
+.swiper-button-next, .swiper-button-prev {
+    color: #a07a4b !important;
+    width: 70px;
+    height: 100%;
+    transition: all ease .3s;
+    margin-top: 0;
+    top: 0;
+}
 
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 30px !important;
+    color: white !important;
+}
