@@ -14,13 +14,14 @@
 
 .businessInfo-summary-wrapper {
     display: flex;
+    justify-content: center;
     margin-top: 200px;
     margin-bottom: 200px;
     width: 100%;
 }
 
 .businessInfo-summary-wrapper__box {
-    width: 50vw;
+    width: 55vw;
     height: auto;
     margin-left: -8px;
     animation: fadeInLeft 1s;
@@ -47,8 +48,9 @@
     font-weight: 500;
     font-size: 40px;
     text-align: right;
+    align-self: center;
     margin-top: 50px;
-    margin-left: 160px;
+    margin-left: 130px;
     animation: fadeInRight 1s;
 }
 
@@ -84,7 +86,7 @@
 .businessInfo-summary-wrapper__box__text__info {
     font-size: 16px;
     margin-top: 50px;
-    width: 330px;
+    width: 400px;
     list-style: none;
 }
 
@@ -95,9 +97,18 @@
 }
 
 .businessInfo-summary-wrapper__box__text__info > li > span:nth-child(1) {
-    width: 90px;
+    width: 25%;
     position: absolute;
-    text-align: right;
+    text-align: center;
     left: 0;
     top: 10px;
+}
+
+.businessInfo-summary-wrapper__box__text__info li span:nth-child(2)::after {
+    content: '';
+    width: 100px;
+    border-bottom: 1px solid #a07a4b;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
 }
