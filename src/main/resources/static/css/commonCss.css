@@ -52,7 +52,7 @@
     justify-content: center;
     align-items: center;
     max-width: 1420px;
-    margin: 150px auto;
+    margin: 100px auto;
     width: 100%;
 }
 
@@ -147,12 +147,8 @@
 
 .dp > li {
     width: 100%;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 }
-
-/*.dp > li > img {*/
-/*    width: 50%;*/
-/*}*/
 
 .dp > li > img {
     width: 60%;
@@ -175,19 +171,3 @@
     text-align: left;
     margin-top: 80px;
 }
-
-/*.dp-right {*/
-/*    width: 50%;*/
-/*    display: inline-block;*/
-/*    float: right;*/
-/*    text-align: right;*/
-/*    margin-top: 80px;*/
-/*}*/
-
-/*.dp-left {*/
-/*    width: 50%;*/
-/*    display: inline-block;*/
-/*    float: left;*/
-/*    text-align: left;*/
-/*    margin-top: 80px;*/
-/*}*/
