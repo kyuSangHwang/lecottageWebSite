@@ -3,8 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-</head>
-<body>
 
+    <!--thisPage-->
+    <link rel="stylesheet" href="/css/contactUs/contactUs.css">
+    <script type="text/javascript" src="/js/contactUs/contactUs.js"></script>
+    <!--all CSS/JS-->
+    <link rel="stylesheet" href="/css/commonCss.css">
+    <!--include css-->
+    <link rel="stylesheet" href="/css/fragments/header.css">
+    <link rel="stylesheet" href="/css/fragments/footer.css">
+    <!--include js-->
+    <script type="text/javascript" src="/js/fragments/header.js"></script>
+    <script type="text/javascript" src="/js/fragments/footer.js"></script>
+    <!--jquery-->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div th:include="fragments/header ::header" class="header"></div>
+<div class="contactUs">
+    <div class="contactUs-container">
+        <div class="contactUs-wrapper">
+            <div class="contactUs-title-wrapper">
+                <h3>상담예약</h3>
+            </div>
+            <form method="post" onsubmit="return chk_submit();" class="contactUs-reservation-wrapper">
+                <fieldset>
+                    <legend>르코테지 상담 예약 양식</legend>
+                    <ul class="contactUs-reservation-wrapper-wr">
+                        <li>
+                            <h4>
+                                <label for="reservation-name">
+                                    성함
+                                    <span class="req">*</span>
+                                </label>
+                            </h4>
+                            <div>
+                                <input type="text" name="reservation-name" id="reservation-name" placeholder="성함을 입력해주세요.">
+                            </div>
+                        </li>
+                        <li>
+                            <h4>
+                                <label for="reservation-age">
+                                    연령대
+                                    <span class="req">*</span>
+                                </label>
+                            </h4>
+                            <div>
+                                <select name="reservation-age" id="reservation-age">
+                                    <option value="1">30대 이하</option>
+                                    <option value="2">40대</option>
+                                    <option value="3">50대</option>
+                                    <option value="4">60대 이상</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li>
+                            <h4>
+                                <label for="reservation-tel">
+                                    휴대폰번호
+                                    <span class="req">*</span>
+                                </label>
+                            </h4>
+                            <div>
+                                <input type="text" name="reservation-tel" id="reservation-tel" class="phoneNumber" oninput="autoHyphen2(this)" placeholder="예) 010-0000-0000" maxlength="13">
+                            </div>
+                        </li>
+                        <li>
+                            <h4>
+                                <label for="reservation-address">거주지역</label>
+                            </h4>
+                            <div>
+                                <input type="text" name="reservation-address" id="reservation-address" placeholder="예) OO시 OO구">
+                            </div>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset>
+                    <legend>개인정보 수집 및 이용 동의 내용</legend>
+                    <div class="contactUs-privacyBox-wrapper">
+                        <h4>[필수] 개인정보의 수집 및 이용에 관한 동의</h4>
+                        <p>당사는 개인정보보호법, 정보통신망이용 촉진 및 정보보호등에 관한 법률 등 관련 법규상의 개인정보보호규정을 준수하고 있으며,<br>
+                            최적의 서비스 제공을 위하여 필요한 최소 범위 내에서 아래와 같이 개인정보를 수집하고 있습니다.</p>
+                        <div>
+                            <table>
+                                <caption>개인정보 수집 및 이용에 관한 내용을 제공해주는 표</caption>
+                                <tr>
+                                    <th>개인정보수집주체</th>
+                                    <td>르코테지, 신대양양평리조트</td>
+                                </tr>
+                                <tr>
+                                    <th>수집하는 개인정보의 목적 및 항목</th>
+                                    <td>1) 수집목적 : 르코테지 분양정보 제공 및 마케팅 활용<br>
+                                        2) 수집항목 : 성함, 휴대폰번호, 거주지역, 연령대</td>
+                                </tr>
+                                <tr>
+                                    <th>개인정보의 보유 및 이용기간</th>
+                                    <td>회사는 개인정보 수집 및 이용목적이 달성된 후에는 지체 없이 파기합니다. (분양 완료 시까지)</td>
+                                </tr>
+                                <tr>
+                                    <th>거부할 권리</th>
+                                    <td>귀하께서는 개인정보 수집 및 이용을 거부하실 수 있습니다.<br>
+                                    <small>※ 단, 이 경우 분양정보 안내 등의 서비스를 제공해 드릴 수 없습니다. (연락처: 02-587-7717)</small></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="contactUs-privacyBox-wrapper">
+                        <h4>[선택] 마케팅 활용동의</h4>
+                        <p>회사는 상기 고객서비스 제공을 위하여 필요 시 아래와 같은 외부 전문업체에 전산 업무를 위탁하여 운행하고 있습니다.</p>
+                        <div class="tb-style02">
+                            <table>
+                                <caption>마케팅 활용에 관한 내용을 제공해주는 표</caption>
+                                <tr>
+                                    <th rowspan="2">개인정보초리의 위탁에 관한 사항</th>
+                                    <th>수집주체</th>
+                                    <th>수집목적</th>
+                                    <th>항목</th>
+                                    <th>보유기간</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        르코테지,<br>
+                                        신대양양평리조트,<br>
+                                        원양종합건설㈜
+                                    </td>
+                                    <td>
+                                        마케팅 및 광고활용<br>
+                                        분양정보 고지 관련 일체
+                                    </td>
+                                    <td>
+                                        성함, 휴대폰번호,<br>
+                                        거주지역, 연령대
+                                    </td>
+                                    <td>분양완료 시까지</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="contactUs-agree-wrapper">
+                        <h4>[필수] 개인정보의 수집 및 이용에 관한 동의</h4>
+                        <div>
+                            <input type="radio" id="agree01-y" name="agree01" checked="checked" value="Y">
+                            <label for="agree01-y">예</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="agree01-n" name="agree01" value="N">
+                            <label for="agree01-n">아니요</label>
+                        </div>
+                    </div>
+
+                    <div class="contactUs-agree-wrapper">
+                        <h4>[선택] 마케팅 활용동의</h4>
+                        <div>
+                            <input type="radio" id="agree02-y" name="agree02" checked="checked" value="Y">
+                            <label for="agree02-y">예</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="agree02-n" name="agree02" value="N">
+                            <label for="agree02-n">아니요</label>
+                        </div>
+                    </div>
+
+                    <div class="contactUs-btn-wrapper">
+                        <input type="submit" value="등록" class="">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div th:include="fragments/footer ::footer" class="footer"></div>
+</div>
 </body>
 </html>
