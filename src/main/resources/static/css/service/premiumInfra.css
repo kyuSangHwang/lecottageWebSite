@@ -12,20 +12,16 @@
     display: flex;
 }
 
-
-
-
-
 .premiumInfra-sec-wrapper__traffic {
     width: 100%;
 }
 
 .premiumInfra-sec-wrapper__traffic > img {
-    width: 100%;
+    width: 85%;
     height: 32vw;
-    min-width: 1300px;
+    min-width: 1278px;
     min-height: 482px;
-
+    margin-left: 5%;
 }
 
 .premiumInfra-sec-wrapper__traffic__info {
@@ -33,7 +29,7 @@
     color: #666;
     font-size: 20px;
     font-weight: 400;
-    letter-spacing: 0.215em;
+    letter-spacing: 0.1em;
 }
 
 .premiumInfra-sec-wrapper__traffic__info > p {
@@ -43,23 +39,23 @@
 .premiumInfra-sec-wrapper__traffic__info > p:nth-child(1) {
     font-size: 60px;
     font-weight: 900;
-    letter-spacing: 0.415em;
-    margin-bottom: 20px;
+    letter-spacing: 0.2em;
+    margin-bottom: 30px;
     color: darkgoldenrod;
 }
 
 .premiumInfra-sec-wrapper__traffic__info > p:nth-child(4) {
     font-size: 40px;
-    font-weight: 600;
-    letter-spacing: 0.3em;
-    margin-top: 30px;
-    margin-bottom: 50px;
+    font-weight: 900;
+    letter-spacing: 0.2em;
+    margin-top: 20px;
+    margin-bottom: 100px;
     color: darkblue;
 }
 
 .premiumInfra-sec-wrapper {
     flex-wrap: wrap;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 }
 
 .premiumInfra-sec-wrapper--lay {
@@ -85,7 +81,7 @@
     text-align: center;
     font-size: 40px;
     font-weight: 600;
-    letter-spacing: 0.215em;
+    letter-spacing: 0.1em;
 }
 
 .premiumInfra-middle-wrapper > p:nth-child(1) {
@@ -96,7 +92,6 @@
 
 .premiumInfra-middle-wrapper > p:nth-child(2) {
     margin-top: 15px;
-    margin-bottom: 30px;
 }
 
 .premiumInfra-middle-wrapper > p:nth-child(4) {
