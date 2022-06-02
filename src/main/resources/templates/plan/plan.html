@@ -2,9 +2,494 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <link rel=" shortcut icon" href="/images/favicon/favicon.ico" style="user-select: auto;">
 
+    <title>LE COTTAGE</title>
+
+    <!--jquery-->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <!--Swiper css/js-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!--ScrollMagic js-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+    <!--all CSS/JS-->
+    <link rel="stylesheet" href="/css/commonCss.css">
+    <link rel="stylesheet" href="/js/commonJs.js">
+    <!--thisPage-->
+    <link rel="stylesheet" href="/css/plan/plan.css">
+    <script type="text/javascript" src="/js/plan/plan.js"></script>
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap" rel="stylesheet">
+    <!--include css/js-->
+    <link rel="stylesheet" href="/css/unit/unit.css">
+    <link rel="stylesheet" href="/css/fragments/header.css">
+    <link rel="stylesheet" href="/css/fragments/footer.css">
+    <script type="text/javascript" src="/js/unit/unit.js"></script>
+    <script type="text/javascript" src="/js/fragments/header.js"></script>
+    <script type="text/javascript" src="/js/fragments/footer.js"></script>
+
+
+</head>
+<body style="overflow-x: hidden">
+<div th:include="fragments/header ::header" class="header"></div>
+
+
+<div class="plan">
+    <div class="plan-container">
+        <section class="plan-container__cover-wrapper">
+            <div class="plan-container__cover-wrapper__img">
+                <div class="blackbox">
+                    <div>
+                        <p>A GOAL WITHOUT A PLAN IS JUST A WISH<br></p>
+                        <p>PLAN</p>
+                        <p>미래를 넘어선 가치를 제안합니다</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="plan-container__content-wrapper">
+            <div class="plan-container__content-wrapper__summary-box">
+                <div class="plan-container__content-wrapper__summary-box__first-content">
+                    <div class="plan-container__content-wrapper__summary-box__first-content__title">
+                        <h3>ARCHITECTURE STORY</h3>
+                        <p>
+                            르코테지의 기본적인 디자인 개념은 <br>
+                            <b>"자연과 인간의 삶을 담는 공간"</b>에서 시작됩니다.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="plan-container__content-wrapper__summary-box__second-content">
+                    <div class="plan-container__content-wrapper__summary-box__second-content__box">
+                        <div class="plan-container__content-wrapper__summary-box__second-content__box__img js-plan-container__content-wrapper__summary-box__second-content__box__img"></div>
+
+                        <div class="plan-container__content-wrapper__summary-box__second-content__box__content">
+                            <p>Le COTTAGE</p>
+                            <div class="plan-container__content-wrapper__summary-box__second-content__box__content__text">
+                                <span>양평의</span>
+                                <span>중심</span><br>
+                                <p>하이엔드 타운하우스</p>
+                            </div>
+                            <ul>
+                                <li id="planExplanationPart1" class="js-plan-explanation-part"></li>
+                                <li id="planExplanationPart2" class="js-plan-explanation-part"></li>
+                                <li id="planExplanationPart3" class="js-plan-explanation-part"></li>
+                                <li id="planExplanationPart4" class="js-plan-explanation-part" style="margin-bottom: 0 !important;"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quick_wrap">
+                <ul class="side_quick">
+                    <li class="on">
+                        <a href="#planPart1">The First Part</a>
+                    </li>
+                    <li class="">
+                        <a href="#planPart2">The Second Part</a>
+                    </li>
+                    <li class="">
+                        <a href="#planPart3">The Third Part</a>
+                    </li>
+                    <li class="">
+                        <a href="#planPart4">The Fourth Part</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="plan-container__content-wrapper__content-box">
+                <div id="planPart1" class="">
+
+                </div>
+
+                <div id="planPart2" class="">
+
+                </div>
+
+                <div id="planPart3" class="">
+
+                </div>
+
+                <div id="planPart4" class="">
+
+                </div>
+
+
+                <div class="unit-container__unit-wrapper__box">
+                    <div id="unitA">
+                        <div class="unit-container__unit-wrapper__box__content">
+                            <div class="unit-container__unit-wrapper__box__content__section-1">
+                                <div class="unit-container__unit-wrapper__box__content__section-1__wrapper">
+                                    <ul>
+                                        <li class="img right">
+                                            <div class="swiper mySwiper1">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <img src="/images/unit/unitA/unitAFloor1-1.jpg" alt="">
+                                                    </div>
+
+                                                    <div class="swiper-slide">
+                                                        <img src="/images/unit/unitA/unitAFloor1-2.jpg" alt="">
+                                                    </div>
+
+                                                    <div class="swiper-slide">
+                                                        <img src="/images/unit/unitA/unitAFloor2-1.jpg" alt="">
+                                                    </div>
+
+                                                    <div class="swiper-slide">
+                                                        <img src="/images/unit/unitA/unitAFloor2-2.jpg" alt="">
+                                                    </div>
+
+                                                    <div class="swiper-slide">
+                                                        <img src="/images/unit/unitA/unitA1-main.jpg" alt="">
+                                                    </div>
+
+                                                    <div class="swiper-slide">
+                                                        <img src="/images/unit/unitA/unitA2-main.jpg" alt="">
+                                                    </div>
+
+                                                    <div class="swiper-slide">
+                                                        <img src="/images/unit/unitA/unitA3.jpg" alt="">
+                                                    </div>
+
+                                                    <div class="swiper-slide">
+                                                        <img src="/images/unit/unitA/unitA4.jpg" alt="">
+                                                    </div>
+
+                                                    <div class="swiper-slide">
+                                                        <img src="/images/unit/unitA/unitA5.jpg" alt="">
+                                                    </div>
+
+                                                    <div class="swiper-slide">
+                                                        <img src="/images/unit/unitA/unitA6.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-button-next"></div>
+                                                <div class="swiper-button-prev"></div>
+                                            </div>
+                                        </li>
+                                        <li class="txt left">
+                                            <h3>
+                                                <b>UNIT A</b>
+                                            </h3>
+
+                                            <p>
+                                                •&nbsp;&nbsp;Le Cottage의 주력 평형으로 당신만의 공간을 아늑하게 채워줄 편리한 구조 <br>
+                                                •&nbsp;&nbsp;일상과 휴식, 공간의 분리로 이뤄낸 삶의 질 향상 <br>
+                                                •&nbsp;&nbsp;Private한 Pool과 전용 사우나 <br>
+                                                •&nbsp;&nbsp;독립된 개별 주차공간 <br><br>
+                                                ✓ 선택형 <br>
+                                                •&nbsp;&nbsp;푸른 산림이 보이는 자연 VIEW를 감상할 수 있는 오픈 테라스 <br>
+                                                •&nbsp;&nbsp;푸른 산림이 보이는 자연 VIEW를 감상할 수 있는 위치에 각각 배치  <br>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+
+                            <div class="unit-container__unit-wrapper__box__content__section-2">
+                                <div class="unit-container__unit-wrapper__box__content__section-2__wrapper">
+                                    <ul>
+                                        <li class="txt right">
+                                            <h3>
+                                                <b>UNIT A</b>
+                                            </h3>
+
+                                            <ul class="aaa">
+                                                <li>
+                                                    <b class="bbb">동 수</b>
+                                                    <p>4 동</p>
+                                                </li>
+
+                                                <li>
+                                                    <b class="bbb">대지면적</b>
+                                                    <p>335m<sup>2</sup> (101평)</p>
+                                                </li>
+
+                                                <li>
+                                                    <b class="bbb">공급면적</b>
+                                                    <p>132.93m<sup>2</sup> (40.21평)</p>
+                                                </li>
+
+                                                <li>
+                                                    <b class="bbb">1 Floor 면적</b>
+                                                    <p>54.09m<sup>2</sup> (16.36평)</p>
+                                                </li>
+
+                                                <li>
+                                                    <b class="bbb">2 Floor 면적</b>
+                                                    <p>78.84m<sup>2</sup> (23.85평)</p>
+                                                </li>
+                                            </ul>
+
+                                            <p class="last123">
+                                                *본 평면도와 면적은 고객의 이해를 돕기 위해 제작된 것으로 <br>
+                                                &nbsp;&nbsp;인허가 과정이나 실 시공시 현장여건 등에 따라 일부 변경될 수 있습니다.
+                                            </p>
+                                        </li>
+
+                                        <li class="img left">
+                                            <img src="/images/unit/unitA/unitAFloorDetail.jpg" alt="" style="max-height: 323px;">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="unitB">
+                        <div class="unit-container__unit-wrapper__box__content">
+                            <div class="unit-container__unit-wrapper__box__content__section-1">
+                                <div class="unit-container__unit-wrapper__box__content__section-1__wrapper">
+                                    <ul>
+                                        <li class="img right">
+                                            <div class="swiper mySwiper1">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <img src="/images/unit/unitB/unitBFloor1-1.jpg" alt="">
+                                                    </div>
+
+                                                    <div class="swiper-slide">
+                                                        <img src="/images/unit/unitB/unitBFloor1-2.jpg" alt="">
+                                                    </div>
+
+                                                    <div class="swiper-slide">
+                                                        <img src="/images/unit/unitB/unitBFloor2-1.jpg" alt="">
+                                                    </div>
+
+                                                    <div class="swiper-slide">
+                                                        <img src="/images/unit/unitB/unitBFloor2-2.jpg" alt="">
+                                                    </div>
+
+                                                    <div class="swiper-slide">
+                                                        <img src="/images/unit/unitB/unitB1.jpg" alt="">
+                                                    </div>
+
+                                                    <div class="swiper-slide">
+                                                        <img src="/images/unit/unitB/unitB2.jpg" alt="">
+                                                    </div>
+
+                                                    <div class="swiper-slide">
+                                                        <img src="/images/unit/unitB/unitB3.jpg" alt="">
+                                                    </div>
+
+                                                    <div class="swiper-slide">
+                                                        <img src="/images/unit/unitB/unitB4.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-button-next"></div>
+                                                <div class="swiper-button-prev"></div>
+                                            </div>
+                                        </li>
+                                        <li class="txt left">
+                                            <h3>
+                                                <b>UNIT B</b>
+                                            </h3>
+
+                                            <p>
+                                                •&nbsp;&nbsp;Le COTTAGE의 주력 평형으로 당신만의 공간을 아늑하게 채워줄 편리한 구조 <br>
+                                                •&nbsp;&nbsp;주방공간의 분리로 더욱 넓은 거실 공간 <br>
+                                                •&nbsp;&nbsp;Private한 Pool과 오픈테라스와 직접 연결된 전용 사우나 <br>
+                                                •&nbsp;&nbsp;독립된 개별 주차공간 <br><br>
+                                                ✓ 선택형 <br>
+                                                •&nbsp;&nbsp;푸른 산림이 보이는 자연 VIEW를 감상할 수 있는 오픈 테라스 <br>
+                                                •&nbsp;&nbsp;푸른 산림이 보이는 자연 VIEW를 감상할 수 있는 위치에 각각 배치  <br>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+
+                            <div class="unit-container__unit-wrapper__box__content__section-2">
+                                <div class="unit-container__unit-wrapper__box__content__section-2__wrapper">
+
+                                    <ul>
+                                        <li class="txt right">
+                                            <h3>
+                                                <b>UNIT B</b>
+                                            </h3>
+
+                                            <ul class="aaa">
+                                                <li>
+                                                    <b class="bbb">동 수</b>
+                                                    <p>10 동</p>
+                                                </li>
+
+                                                <li>
+                                                    <b class="bbb">대지면적</b>
+                                                    <p>335m<sup>2</sup> (101평)</p>
+                                                </li>
+
+                                                <li>
+                                                    <b class="bbb">공급면적</b>
+                                                    <p>116.24m<sup>2</sup> (35.55평)</p>
+                                                </li>
+
+                                                <li>
+                                                    <b class="bbb">1 Floor 면적</b>
+                                                    <p>60.15m<sup>2</sup> (18.19평)</p>
+                                                </li>
+
+                                                <li>
+                                                    <b class="bbb">2 Floor 면적</b>
+                                                    <p>56.09m<sup>2</sup> (16.97평)</p>
+                                                </li>
+                                            </ul>
+
+                                            <p class="last123">
+                                                *본 평면도와 면적은 고객의 이해를 돕기 위해 제작된 것으로 <br>
+                                                &nbsp;&nbsp;인허가 과정이나 실 시공시 현장여건 등에 따라 일부 변경될 수 있습니다.
+                                            </p>
+                                        </li>
+
+                                        <li class="img left">
+                                            <img src="/images/unit/unitB/unitBFloorDetail.jpg" alt="" style="max-height: 323px;">
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="unitC">
+                        <div class="unit-container__unit-wrapper__box__content">
+                            <div class="unit-container__unit-wrapper__box__content__section-1">
+                                <div class="unit-container__unit-wrapper__box__content__section-1__wrapper">
+                                    <ul>
+                                        <li class="img right">
+                                            <div class="swiper mySwiper1">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <img src="/images/unit/unitC/unitCFloor1-1.jpg" alt="">
+                                                    </div>
+
+                                                    <div class="swiper-slide">
+                                                        <img src="/images/unit/unitC/unitCFloor1-2.jpg" alt="">
+                                                    </div>
+
+                                                    <div class="swiper-slide">
+                                                        <img src="/images/unit/unitC/unitCFloor2-1.jpg" alt="">
+                                                    </div>
+
+                                                    <div class="swiper-slide">
+                                                        <img src="/images/unit/unitC/unitCFloor2-2.jpg" alt="">
+                                                    </div>
+
+                                                    <div class="swiper-slide">
+                                                        <img src="/images/unit/unitC/unitC1.jpg" alt="">
+                                                    </div>
+
+                                                    <div class="swiper-slide">
+                                                        <img src="/images/unit/unitC/unitC2.jpg" alt="">
+                                                    </div>
+
+                                                    <div class="swiper-slide">
+                                                        <img src="/images/unit/unitC/unitC3.jpg" alt="">
+                                                    </div>
+
+                                                    <div class="swiper-slide">
+                                                        <img src="/images/unit/unitC/unitC4.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-button-next"></div>
+                                                <div class="swiper-button-prev"></div>
+                                            </div>
+                                        </li>
+                                        <li class="txt left">
+                                            <h3>
+                                                <b>UNIT C</b>
+                                            </h3>
+
+                                            <p>
+                                                •&nbsp;&nbsp;Le COTTAGE의 효율적인 평형으로 휴식에 최적화된 편리한 구조 <br>
+                                                •&nbsp;&nbsp;일상과 휴식, 공간의 분리로 이뤄낸 삶의 질 향상 <br>
+                                                •&nbsp;&nbsp;Private한 자쿠지와 전용 사우나 <br>
+                                                •&nbsp;&nbsp;독립된 개별 주차공간 <br><br>
+                                                ✓ 선택형 <br>
+                                                •&nbsp;&nbsp;푸른 산림이 보이는 자연 VIEW를 감상할 수 있는 오픈 테라스 <br>
+                                                •&nbsp;&nbsp;푸른 산림이 보이는 자연 VIEW를 감상할 수 있는 위치에 각각 배치  <br>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+
+                            <div class="unit-container__unit-wrapper__box__content__section-2">
+                                <div class="unit-container__unit-wrapper__box__content__section-2__wrapper">
+
+                                    <ul>
+                                        <li class="txt right">
+                                            <h3>
+                                                <b>UNIT C</b>
+                                            </h3>
+
+                                            <ul class="aaa">
+                                                <li>
+                                                    <b class="bbb">동 수</b>
+                                                    <p>3 동</p>
+                                                </li>
+
+                                                <li>
+                                                    <b class="bbb">대지면적</b>
+                                                    <p>335m<sup>2</sup> (101평)</p>
+                                                </li>
+
+                                                <li>
+                                                    <b class="bbb">공급면적</b>
+                                                    <p>100.98m<sup>2</sup> (30.55평)</p>
+                                                </li>
+
+                                                <li>
+                                                    <b class="bbb">1 Floor 면적</b>
+                                                    <p>50.85m<sup>2</sup> (15.38평)</p>
+                                                </li>
+
+                                                <li>
+                                                    <b class="bbb">2 Floor 면적</b>
+                                                    <p>50.13m<sup>2</sup> (15.16평)</p>
+                                                </li>
+                                            </ul>
+
+                                            <p class="last123">
+                                                *본 평면도와 면적은 고객의 이해를 돕기 위해 제작된 것으로 <br>
+                                                &nbsp;&nbsp;인허가 과정이나 실 시공시 현장여건 등에 따라 일부 변경될 수 있습니다.
+                                            </p>
+                                        </li>
+
+                                        <li class="img left">
+                                            <img src="/images/unit/unitC/unitCFloorDetail.jpg" alt="" style="max-height: 323px;">
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+</div>
+
+
+
+<div th:include="fragments/footer ::footer" class="footer"></div>
 </body>
 </html>
