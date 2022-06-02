@@ -7,7 +7,7 @@ $(document).ready(function () {
         spaceBetween: 30,
         speed: 500,
         autoplay: {
-            delay: 2500,
+            delay: 2800,
             disableOnInteraction: false,
         },
         navigation: {
@@ -22,7 +22,7 @@ $(document).ready(function () {
         spaceBetween: 30,
         speed: 500,
         autoplay: {
-            delay: 2500,
+            delay: 2800,
             disableOnInteraction: false,
         },
         navigation: {
