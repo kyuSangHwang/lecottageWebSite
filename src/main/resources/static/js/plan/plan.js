@@ -15,7 +15,7 @@ $(document).ready(function () {
         });
 
         planExplanationPart.addEventListener('mouseout', (event) => {
-            secondContentImage.css({'background-image': 'url(../../images/main/main.png)'});
+            secondContentImage.css({'background-image': 'url(../../images/main/main.jpg)'});
             secondContentImage.css({'transition': 'all ease-in 0.5s'});
         });
     });
