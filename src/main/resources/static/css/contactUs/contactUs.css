@@ -38,7 +38,7 @@
     width: 100%;
     vertical-align: baseline;
     border: 1px solid #a07a4b;
-    background: darkred;
+    background: darkslategray;
     color: #fff;
     font-size: 16px;
     box-sizing: border-box;
@@ -51,13 +51,17 @@
     width: 100%;
     vertical-align: baseline;
     border: 1px solid #a07a4b;
-    background: darkred;
+    background: darkslategray;
     color: #fff;
     font-size: 16px;
     box-sizing: border-box;
 }
 
 input::placeholder {
+    color: lightyellow;
+}
+
+#reservation-age {
     color: lightyellow;
 }
 
