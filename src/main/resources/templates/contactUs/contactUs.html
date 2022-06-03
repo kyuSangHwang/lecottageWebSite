@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Title</title>
 
+    <!--jquery-->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <!--thisPage-->
     <link rel="stylesheet" href="/css/contactUs/contactUs.css">
     <script type="text/javascript" src="/js/contactUs/contactUs.js"></script>
@@ -15,15 +17,15 @@
     <!--include js-->
     <script type="text/javascript" src="/js/fragments/header.js"></script>
     <script type="text/javascript" src="/js/fragments/footer.js"></script>
-    <!--jquery-->
-    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <!--Google Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap" rel="stylesheet">
+    <!--emailJs-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 
-<body>
+<body style="overflow-x: hidden">
 <div th:include="fragments/header ::header" class="header"></div>
 <div class="contactUs">
     <div class="contactUs-container">
@@ -31,7 +33,7 @@
             <div class="contactUs-title-wrapper">
                 <h3>상담예약</h3>
             </div>
-            <form method="post" onsubmit="return chk_submit();" class="contactUs-reservation-wrapper">
+            <form method="get" class="contactUs-reservation-wrapper" autocomplete='off'>
                 <fieldset>
                     <legend>르코테지 상담 예약 양식</legend>
                     <ul class="contactUs-reservation-wrapper-wr">
@@ -43,7 +45,7 @@
                                 </label>
                             </h4>
                             <div>
-                                <input type="text" name="reservation-name" id="reservation-name" placeholder="성함을 입력해주세요.">
+                                <input type="text" name="reservation-name" id="reservation-name" class="ct_name" placeholder="성함을 입력해주세요.">
                             </div>
                         </li>
                         <li>
@@ -55,10 +57,11 @@
                             </h4>
                             <div>
                                 <select name="reservation-age" id="reservation-age">
-                                    <option value="1">30대 이하</option>
-                                    <option value="2">40대</option>
-                                    <option value="3">50대</option>
-                                    <option value="4">60대 이상</option>
+                                    <option value="">=========선택해주세요=========</option>
+                                    <option value="30대 이하">30대 이하</option>
+                                    <option value="40대">40대</option>
+                                    <option value="50대">50대</option>
+                                    <option value="60대 이상">60대 이상</option>
                                 </select>
                             </div>
                         </li>
@@ -70,7 +73,7 @@
                                 </label>
                             </h4>
                             <div>
-                                <input type="text" name="reservation-tel" id="reservation-tel" class="phoneNumber" oninput="autoHyphen2(this)" placeholder="예) 010-0000-0000" maxlength="13">
+                                <input type="text" name="reservation-tel" id="reservation-tel" class="phoneNumber" placeholder="예) 010-0000-0000" maxlength="13">
                             </div>
                         </li>
                         <li>
@@ -173,7 +176,7 @@
                     </div>
 
                     <div class="contactUs-btn-wrapper">
-                        <input type="submit" value="등록" class="">
+                        <input type="submit" value="등록" class="contactUs-btn-wrapper__click">
                     </div>
                 </fieldset>
             </form>
