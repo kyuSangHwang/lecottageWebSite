@@ -1,10 +1,18 @@
-let mobileStatusHeader = false;
-let nowPath = "";
 
 let prevScrollTop = 0;
 let nowScrollTop = 0;
 
 $(document).ready(function () {
+
+    $(window).on('load', function(){
+
+        let pageName = document.location.pathname.includes('contactUs');
+
+        if (pageName) {
+            $(".header").css('color', 'Black');
+        }
+
+    });
 
     $(window).on('scroll', function(){
         nowScrollTop = $(this).scrollTop();
@@ -21,49 +29,7 @@ $(document).ready(function () {
         prevScrollTop = nowScrollTop;
     });
 
-
 });
-
-function headerManager() {
-    const $header = $('.header');
-    const $headerLogo = $('.js-header-container__company-logo');
-    let pathName = location.pathname;
-
-    if (pathName != "/") {
-        $header.css('position', 'absolute');
-
-    } else {
-        $header.css('position', 'fixed');
-        $header.css('color', 'white');
-        $header.css('background-color', 'rgba(0,0,0,0)');
-        $headerLogo.css('background-image', 'url("/images/headerFooter/logoFullWidthWhite.png")');
-
-    }
-}
-
-function mainHeaderManager(index) {
-    if (mobileStatusHeader) {
-        const menu = $('#menu');
-        if (index > 0) {
-            menu.css("color", "black");
-        } else {
-            menu.css("color", "white");
-        }
-    } else {
-        const $header = $('.header');
-        const $headerLogo = $('.js-header-container__company-logo');
-        console.log(index);
-
-        if (index > 0) {
-            $header.css('color', 'black');
-            $headerLogo.css('background-image', 'url("/images/headerFooter/logoFullWidth.png")');
-        } else {
-            $header.css('color', 'white');
-            $header.css('background-color', 'rgba(0,0,0,0)');
-            $headerLogo.css('background-image', 'url("/images/headerFooter/logoFullWidthWhite.png")');
-        }
-    }
-}
 
 function mainHome() {
     locationSearch();
