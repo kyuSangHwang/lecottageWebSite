@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <title>오시는길</title>
 
+    <!--jquery-->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <!--thisPage-->
     <link rel="stylesheet" href="/css/lecottage/directions.css">
     <script type="text/javascript" src="/js/lecottage/directions.js"></script>
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=033ae22a73fc91a9d29f7380f2607ef7"></script>
     <!--all CSS/JS-->
     <link rel="stylesheet" href="/css/commonCss.css">
-    <!--jquery-->
-    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <!--include css-->
     <link rel="stylesheet" href="/css/fragments/header.css">
     <link rel="stylesheet" href="/css/fragments/footer.css">
@@ -52,30 +52,6 @@
         <div class="directions-mapWrap-wrapper">
             <div class="directions-main-wrapper__wr">
                 <div id="map" class="directions-mapWrap-wrapper__map"></div>
-                <script>
-                    var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
-                    var options = { //지도를 생성할 때 필요한 기본 옵션
-                        center: new kakao.maps.LatLng(37.470758, 127.594064), //지도의 중심좌표.
-                        level: 6 //지도의 레벨(확대, 축소 정도)
-                    };
-
-                    var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
-
-                    // 지도에 마커를 생성하고 표시한다
-                    var marker = new kakao.maps.Marker({
-                        position: new kakao.maps.LatLng(37.46191, 127.59366), // 마커의 좌표
-                        map: map // 마커를 표시할 지도 객체
-                    });
-
-                    // 마커 위에 표시할 인포윈도우를 생성한다
-                    var infowindow = new kakao.maps.InfoWindow({
-                        content : '<div style="padding:5px;">사업예정지</div>' // 인포윈도우에 표시할 내용
-                    });
-
-                    // 인포윈도우를 지도에 표시한다
-                    infowindow.open(map, marker);
-                </script>
-
                 <div class="directions-mapWrap-wrapper__info">
                     <p>현장사무소</p>
                     <p><i class="bi bi-geo-alt-fill"></i> 경기도 양평군 용문면 용문삼성로 333-13</p>
@@ -85,30 +61,6 @@
 
             <div class="directions-main-wrapper__wr">
                 <div id="map2" class="directions-mapWrap-wrapper__map"></div>
-                <script>
-                    var container = document.getElementById('map2'); //지도를 담을 영역의 DOM 레퍼런스
-                    var options = { //지도를 생성할 때 필요한 기본 옵션
-                        center: new kakao.maps.LatLng(37.475834, 127.045323), //지도의 중심좌표.
-                        level: 4 //지도의 레벨(확대, 축소 정도)
-                    };
-
-                    var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
-
-                    // 지도에 마커를 생성하고 표시한다
-                    var marker = new kakao.maps.Marker({
-                        position: new kakao.maps.LatLng(37.475834, 127.045323), // 마커의 좌표
-                        map: map // 마커를 표시할 지도 객체
-                    });
-
-                    // 마커 위에 표시할 인포윈도우를 생성한다
-                    var infowindow = new kakao.maps.InfoWindow({
-                        content : '<div style="padding:5px;">르코테지, LeCottage</div>' // 인포윈도우에 표시할 내용
-                    });
-
-                    // 인포윈도우를 지도에 표시한다
-                    infowindow.open(map, marker);
-                </script>
-
                 <div class="directions-mapWrap-wrapper__info">
                     <p>서울사무실</p>
                     <p><i class="bi bi-geo-alt-fill"></i> 서울시 서초구 언남17길 14 대원빌딩4층</p>
