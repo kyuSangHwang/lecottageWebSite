@@ -16,7 +16,7 @@ $(document).ready(function () {
         },
     });
 
-    let lastScroll = 0;
+    let lastScroll1 = 0;
     $(window).scroll(function(event){
         let scroll = $(this).scrollTop();
         if (scroll > 1100){
@@ -25,7 +25,7 @@ $(document).ready(function () {
         else {
             $(".quick_wrap").removeClass("active");
         }
-        lastScroll = scroll;
+        lastScroll1 = scroll;
     });
 
     quickNaviInit();
@@ -76,4 +76,3 @@ function quickNaviInit(){
         }).addTo(controller).setClassToggle(listMenu[i].listTarget.parentElement, 'on')
     }
 }
-
