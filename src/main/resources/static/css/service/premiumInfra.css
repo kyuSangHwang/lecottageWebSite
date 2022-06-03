@@ -82,6 +82,10 @@
     font-size: 40px;
     font-weight: 600;
     letter-spacing: 0.1em;
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+    width: 100%;
+    padding: 100px;
 }
 
 .premiumInfra-middle-wrapper > p:nth-child(1) {
