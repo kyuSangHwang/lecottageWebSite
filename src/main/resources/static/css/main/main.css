@@ -14,7 +14,7 @@ ul, ol {
 
 /***** cover-content *****/
 .main-container__cover-content {
-    background: url("../../images/main/main.png") no-repeat center center / cover;
+    background: url("../../images/main/main.jpg") no-repeat center center / cover;
     width: 101%;
     height: 100vh;
     display: flex;
@@ -58,7 +58,7 @@ ul, ol {
 
 /***** text-box-content *****/
 .main-container__text-box-content {
-    background: url("/images/main/mainTextBox.png") no-repeat center center / cover;
+    background: url("/images/main/mainTextBox.jpg") no-repeat center center / cover;
     width: 100vw;
     height: 520px;
     align-items: center;
