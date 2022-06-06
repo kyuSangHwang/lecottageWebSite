@@ -7,7 +7,7 @@
     width: 50vw;
     height: 101vh;
     background-color: black;
-    opacity: 75%;
+    opacity: 75% !important;
     position: relative;
     color: white;
     animation: fadeInLeft 1s;
@@ -69,8 +69,10 @@
 }
 
 .infoText {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    /*margin-top: 30px;*/
+    /*margin-bottom: 30px;*/
+    margin-top: 60px;
+    margin-bottom: 60px;
     letter-spacing: .2em;
     font-weight: bold;
     color: #666;

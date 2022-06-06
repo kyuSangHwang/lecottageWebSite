@@ -21,6 +21,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap" rel="stylesheet">
+    <!--Animation On Scroll CSS/JS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body style="overflow-x: hidden">
@@ -41,7 +44,7 @@
             </div>
         </div>
 
-        <div class="concierge-middle-wrapper">
+        <div class="concierge-middle-wrapper aos-animate" data-aos="fade-up">
             <span>Only the leaders</span><span> are allowed to</span>
             <p>own Yangpyeong Le COTTAGE</p>
             <p>꿈이 현실이 되는 최고의 프레스티지 하우스 땅 바람 구름 자연과 함께 숨쉬는 곳</p>
@@ -52,16 +55,16 @@
                 <ul class="concierge-sec-wrapper">
                     <li class="concierge-sec-wrapper__conciergeDesk">
                         <div>
-                            <div class="concierge-sec-wrapper__conciergeDesk__info infoText">
+                            <div class="concierge-sec-wrapper__conciergeDesk__info infoText aos-animate" data-aos="fade-right">
                                 <p>컨시어지 데스크</p>
                                 <p>Concierge Desk</p>
                                 <p>고객들이 진정한 여유를 즐길 수 있도록 전문성을 갖춘 직원이</p>
                                 <p>다양한 컨시어지 서비스를 도와주는 입주민만을 위한 데스크</p>
                             </div>
-                            <img src="/images/service/concierge/conciergeDesk.jpg" class="concierge-sec-wrapper__conciergeDesk__img" alt=""/>
+                            <img src="/images/service/concierge/conciergeDesk.jpg" class="concierge-sec-wrapper__conciergeDesk__img aos-animate" data-aos="fade-left" alt=""/>
                         </div>
                     </li>
-                    <li>
+                    <li class="aos-animate" data-aos="fade-up">
                         <img src="/images/service/concierge/cleaning.jpg" class="concierge-sec-wrapper__cleaning__img" alt=""/>
                         <div class="concierge-sec-wrapper__cleaning__info infoText">
                             <p>입주민 전용 청소 서비스</p>
@@ -70,7 +73,7 @@
                             <p>다양한 컨시어지 서비스를 도와주는 입주민만을 위한 데스크</p>
                         </div>
                     </li>
-                    <li>
+                    <li class="aos-animate" data-aos="fade-up">
                         <div class="concierge-sec-wrapper__turnDown__info infoText">
                             <p>턴다운 서비스</p>
                             <p>TurnDown Service</p>
@@ -83,8 +86,8 @@
 
                 <ul class="dp concierge-sec-wrapper-wr">
                     <li>
-                        <img src="/images/service/concierge/room.jpg" class="concierge-sec-wrapper__room__img" alt=""/>
-                        <div class="concierge-sec-wrapper__room__info infoText dp-right">
+                        <img src="/images/service/concierge/room.jpg" class="concierge-sec-wrapper__room__img aos-animate" data-aos="fade-right" alt=""/>
+                        <div class="concierge-sec-wrapper__room__info infoText dp-right aos-animate" data-aos="fade-left">
                             <p>룸 서비스</p>
                             <p>Room Service</p>
                             <p>호텔 객실에 고객의 요청으로 음료, 식사 등을</p>
@@ -92,18 +95,18 @@
                         </div>
                     </li>
                     <li>
-                        <div class="concierge-sec-wrapper__laundry__info infoText dp-left">
+                        <div class="concierge-sec-wrapper__laundry__info infoText dp-left aos-animate" data-aos="fade-right">
                             <p>세탁 서비스</p>
                             <p>Laundry Service</p>
                             <p>의류 본연의 상태를 유지할 수 있도록
                             <p>옷감 손상을 최소화하고</p>
                             <p>다양한 의류들에 적합한 맞춤형세탁서비스</p>
                         </div>
-                        <img src="/images/service/concierge/laundry.jpg" class="concierge-sec-wrapper__laundry__img" alt=""/>
+                        <img src="/images/service/concierge/laundry.jpg" class="concierge-sec-wrapper__laundry__img aos-animate" data-aos="fade-left" alt=""/>
                     </li>
                     <li>
-                        <img src="/images/service/concierge/lifeCare.jpg" class="concierge-sec-wrapper__lifeCare__img" alt=""/>
-                        <div class="concierge-sec-wrapper__lifeCare__info infoText dp-right">
+                        <img src="/images/service/concierge/lifeCare.jpg" class="concierge-sec-wrapper__lifeCare__img aos-animate" data-aos="fade-right" alt=""/>
+                        <div class="concierge-sec-wrapper__lifeCare__info infoText dp-right aos-animate" data-aos="fade-left">
                             <p>라이프 케어 서비스</p>
                             <p>Life Care Service</p>
                             <p>전문화된 인력과 쳬계적인 시스템을 통해</p>
@@ -112,17 +115,17 @@
                         </div>
                     </li>
                     <li>
-                        <div class="concierge-sec-wrapper__storage__info infoText dp-left">
+                        <div class="concierge-sec-wrapper__storage__info infoText dp-left aos-animate" data-aos="fade-right">
                             <p>물품 보관 서비스</p>
                             <p>Storage Of Goods Service</p>
                             <p>독채 혹은 객실에서 보관하기 힘든 물품들을</p>
                             <p>보관해주는 서비스</p>
                         </div>
-                        <img src="/images/service/concierge/storage.jpg" class="concierge-sec-wrapper__storage__img" alt=""/>
+                        <img src="/images/service/concierge/storage.jpg" class="concierge-sec-wrapper__storage__img aos-animate" data-aos="fade-left" alt=""/>
                     </li>
                     <li>
-                        <img src="/images/service/concierge/pickUp.jpg" class="concierge-sec-wrapper__pickUp__img" alt=""/>
-                        <div class="concierge-sec-wrapper__pickUp__info infoText dp-right">
+                        <img src="/images/service/concierge/pickUp.jpg" class="concierge-sec-wrapper__pickUp__img aos-animate" data-aos="fade-right" alt=""/>
+                        <div class="concierge-sec-wrapper__pickUp__info infoText dp-right aos-animate" data-aos="fade-left">
                             <p>픽업 서비스</p>
                             <p>Pick Up Service</p>
                             <p>리조트, 글램핑 투숙객들을 위한 </p>
@@ -130,17 +133,17 @@
                         </div>
                     </li>
                     <li>
-                        <div class="concierge-sec-wrapper__housekeeper__info infoText dp-left">
+                        <div class="concierge-sec-wrapper__housekeeper__info infoText dp-left aos-animate" data-aos="fade-right">
                             <p>도우미 서비스</p>
                             <p>Housekeeper Service</p>
                             <p>입주민만을 위한 삶의 질을 향상시킬 수 있는</p>
                             <p>산모·가사·정리수납 등의 도우미 서비스</p>
                         </div>
-                        <img src="/images/service/concierge/housekeeper.jpg" class="concierge-sec-wrapper__housekeeper__img" alt=""/>
+                        <img src="/images/service/concierge/housekeeper.jpg" class="concierge-sec-wrapper__housekeeper__img aos-animate" data-aos="fade-left" alt=""/>
                     </li>
                     <li>
-                        <img src="/images/service/concierge/breakfast.jpg" class="concierge-sec-wrapper__breakfast__img" alt=""/>
-                        <div class="concierge-sec-wrapper__breakfast__info infoText dp-right">
+                        <img src="/images/service/concierge/breakfast.jpg" class="concierge-sec-wrapper__breakfast__img aos-animate" data-aos="fade-right" alt=""/>
+                        <div class="concierge-sec-wrapper__breakfast__info infoText dp-right aos-animate" data-aos="fade-left">
                             <p>조식 서비스</p>
                             <p>Breakfast Service</p>
                             <p>매일 아침 씨리얼, 토스트, 음료 등</p>
@@ -148,13 +151,13 @@
                         </div>
                     </li>
                     <li>
-                        <div class="concierge-sec-wrapper__bbq__info infoText dp-left">
+                        <div class="concierge-sec-wrapper__bbq__info infoText dp-left aos-animate" data-aos="fade-right">
                             <p>바베큐 서비스</p>
                             <p>BBQ Service</p>
                             <p>글램핑 투숙객들을 위한 바베큐 그릴과 숯을</p>
                             <p>제공하는 서비스</p>
                         </div>
-                        <img src="/images/service/concierge/bbq.jpg" class="concierge-sec-wrapper__bbq__img" alt=""/>
+                        <img src="/images/service/concierge/bbq.jpg" class="concierge-sec-wrapper__bbq__img aos-animate" data-aos="fade-left" alt=""/>
                     </li>
                 </ul>
         </div>

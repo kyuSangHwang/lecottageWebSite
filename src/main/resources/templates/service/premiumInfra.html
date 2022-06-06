@@ -21,6 +21,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap" rel="stylesheet">
+    <!--Animation On Scroll CSS/JS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body style="overflow-x: hidden">
 <div th:include="fragments/header ::header" class="header"></div>
@@ -41,27 +44,27 @@
 
         <div class="premiumInfra-sec-wrapper infoBox">
             <div class="premiumInfra-sec-wrapper__traffic">
-                <div class="premiumInfra-sec-wrapper__traffic__info">
+                <div class="premiumInfra-sec-wrapper__traffic__info aos-animate" data-aos="fade-up">
                     <p>Only 30 Minute</p>
                     <p>수상스포츠, 골프, 글램핑 등 시즌 별 레저는 물론</p>
                     <p>문화갤러리와 천혜의 자연에 이르기까지</p>
                     <p>서울에서 30분</p>
                 </div>
-                <img class="premiumInfra-sec-wrapper__traffic__img" src="/images/service/premiumInfra/traffic.jpg" alt="">
+                <img class="premiumInfra-sec-wrapper__traffic__img  aos-animate" data-aos="flip-up" src="/images/service/premiumInfra/traffic.jpg" alt="">
             </div>
         </div>
 
         <div class="premiumInfra-sec-wrapper premiumInfra-sec-wrapper--lay infoBox">
 
-            <div class="premiumInfra-middle-wrapper">
+            <div class="premiumInfra-middle-wrapper aos-animate" data-aos="fade-down">
                 <p>One-stop life infrastructure</p>
                 <p>생활의 품격을 업그레이드하는 프리미엄 인프라</p>
             </div>
 
             <ul class="premiumInfra-sec-wrapper premiumInfra-sec-wrapper-wr dp">
                 <li>
-                    <img src="/images/service/premiumInfra/golf.jpg" class="premiumInfra-sec-wrapper__golf__info" alt=""/>
-                    <div class="premiumInfra-sec-wrapper__golf__info infoText dp-right">
+                    <img src="/images/service/premiumInfra/golf.jpg" class="premiumInfra-sec-wrapper__golf__info aos-animate" data-aos="fade-right" alt=""/>
+                    <div class="premiumInfra-sec-wrapper__golf__info infoText dp-right aos-animate" data-aos="fade-left">
                         <p>Golf Field</p>
                         <p>골프장</p>
 <!--                        <p>호텔 객실에 고객의 요청으로</p> -->
@@ -69,26 +72,26 @@
                     </div>
                 </li>
                 <li>
-                    <div class="premiumInfra-sec-wrapper__waterLeisure__info infoText dp-left">
+                    <div class="premiumInfra-sec-wrapper__waterLeisure__info infoText dp-left aos-animate" data-aos="fade-right">
                         <p>Water Leisure</p>
                         <p>수상 레저</p>
 <!--                        <p>의류 본연의 상태를 유지할 수 있도록</p>-->
 <!--                        <p>옷감 손상을 최소화하고</p>-->
 <!--                        <p>다양한 의류들에 적합한 맞춤형세탁서비스</p>-->
                     </div>
-                    <img src="/images/service/premiumInfra/waterLeisure.jpg" class="premiumInfra-sec-wrapper__waterLeisure__img" alt=""/>
+                    <img src="/images/service/premiumInfra/waterLeisure.jpg" class="premiumInfra-sec-wrapper__waterLeisure__img aos-animate" data-aos="fade-left" alt=""/>
                 </li>
             </ul>
 
-            <div class="premiumInfra-middle-wrapper">
+            <div class="premiumInfra-middle-wrapper aos-animate" data-aos="flip-up">
                 <p>누군가의 휴가는</p>
                 <p>당신에겐 일상입니다</p>
             </div>
 
             <ul class="premiumInfra-sec-wrapper premiumInfra-sec-wrapper-wr dp">
                 <li>
-                    <img src="/images/service/premiumInfra/forestLodge.jpg" class="premiumInfra-sec-wrapper__forestLodge__img" alt=""/>
-                    <div class="premiumInfra-sec-wrapper__forestLodge__info infoText dp-right">
+                    <img src="/images/service/premiumInfra/forestLodge.jpg" class="premiumInfra-sec-wrapper__forestLodge__img aos-animate" data-aos="fade-right" alt=""/>
+                    <div class="premiumInfra-sec-wrapper__forestLodge__info infoText dp-right aos-animate" data-aos="fade-left">
                         <p>Forest Lodge</p>
                         <p>휴양림</p>
 <!--                        <p>전문화된 인력과 쳬계적인 시스템을 통해</p>-->
@@ -97,13 +100,13 @@
                     </div>
                 </li>
                 <li>
-                    <div class="premiumInfra-sec-wrapper__ski__info infoText dp-left">
+                    <div class="premiumInfra-sec-wrapper__ski__info infoText dp-left aos-animate" data-aos="fade-right">
                         <p>Ski Resort</p>
                         <p>스키장</p>
 <!--                        <p>독채 혹은 객실에서 보관하기 힘든 물품들을</p>-->
 <!--                        <p>보관해주는 서비스</p>-->
                     </div>
-                    <img src="/images/service/premiumInfra/ski.jpg" class="premiumInfra-sec-wrapper__ski__img" alt=""/>
+                    <img src="/images/service/premiumInfra/ski.jpg" class="premiumInfra-sec-wrapper__ski__img aos-animate" data-aos="fade-left" alt=""/>
                 </li>
             </ul>
         </div>

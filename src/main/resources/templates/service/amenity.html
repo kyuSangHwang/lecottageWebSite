@@ -26,6 +26,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!--Animation On Scroll CSS/JS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </head>
 <body style="overflow-x: hidden">
@@ -46,7 +49,7 @@
             </div>
         </div>
 
-        <div class="amenity-middle-wrapper">
+        <div class="amenity-middle-wrapper aos-animate" data-aos="fade-up">
             <p>It is only for you</p>
             <span>A variety of </span><span>Complex Cultural Facilities</span><span> enjoyed in nature</span>
             <p>자연에 녹아들어 더욱 아름다운 다양한 복합 문화 시설</p>
@@ -55,8 +58,8 @@
 
         <div class="amenity-sec-wrapper">
             <div class="amenity-sec-wrapper__outDoorStage infoBox">
-                <div class="amenity-sec-wrapper__outDoorStage__img"></div>
-                <div class="amenity-sec-wrapper__outDoorStage__info infoText infoText--right">
+                <div class="amenity-sec-wrapper__outDoorStage__img aos-animate" data-aos="fade-right"></div>
+                <div class="amenity-sec-wrapper__outDoorStage__info infoText infoText--right aos-animate" data-aos="fade-left">
                     <p>Outdoor Stage</p>
                     <p>야외 공간</p>
                     <p>야외 수영장, 잔디 광장</p>
@@ -65,14 +68,14 @@
             </div>
 
             <div class="amenity-sec-wrapper__pool infoBox">
-                <div class="amenity-sec-wrapper__pool__info infoText infoText--left">
+                <div class="amenity-sec-wrapper__pool__info infoText infoText--left aos-animate" data-aos="fade-right">
                     <p>Pool</p>
                     <p>수영장</p>
                     <p>물의 공간, 감성적인 숲의 공간</p>
                     <p>(야외 수영장, 단지 내 수영장)</p>
                 </div>
 
-                <div class="swiper-container swiper mySwiper">
+                <div class="swiper-container swiper mySwiper aos-animate" data-aos="fade-left">
                     <!-- 보여지는 영역 -->
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -94,7 +97,7 @@
             </div>
 
             <div class="amenity-sec-wrapper__mice infoBox">
-                <div class="swiper-container swiper mySwiper">
+                <div class="swiper-container swiper mySwiper aos-animate" data-aos="fade-right">
                     <!-- 보여지는 영역 -->
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -117,7 +120,7 @@
                     <div class="swiper-pagination"></div>
                 </div>
 
-                <div class="amenity-sec-wrapper__mice__info infoText infoText--right">
+                <div class="amenity-sec-wrapper__mice__info infoText infoText--right aos-animate" data-aos="fade-left">
                     <p>Mice</p>
                     <p>Mice(convention)</p>
                     <p>기업회의 (Meeting)</p>
@@ -128,7 +131,7 @@
             </div>
 
             <div class="amenity-sec-wrapper__concertHall infoBox">
-                <div class="amenity-sec-wrapper__concertHall__info infoText infoText--left">
+                <div class="amenity-sec-wrapper__concertHall__info infoText infoText--left aos-animate" data-aos="fade-right">
                     <p>Concert Hall & Cafe</p>
                     <p>콘서트 홀 & 카페</p>
                     <p>부드러운 커피 한잔</p>
@@ -136,7 +139,7 @@
                     <p>음악이 있는 곳</p>
                 </div>
 
-                <div class="swiper-container swiper mySwiper">
+                <div class="swiper-container swiper mySwiper aos-animate" data-aos="fade-left">
                     <!-- 보여지는 영역 -->
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -161,7 +164,7 @@
             </div>
 
             <div class="amenity-sec-wrapper__sauna infoBox">
-                <div class="swiper-container swiper mySwiper">
+                <div class="swiper-container swiper mySwiper aos-animate" data-aos="fade-right">
                     <!-- 보여지는 영역 -->
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -184,7 +187,7 @@
                     <div class="swiper-pagination"></div>
                 </div>
 
-                <div class="amenity-sec-wrapper__sauna__info infoText infoText--right">
+                <div class="amenity-sec-wrapper__sauna__info infoText infoText--right aos-animate" data-aos="fade-left">
                     <p>Sauna & Spa</p>
                     <p>사우나 & 스파</p>
                     <p>혼잡한 일상에서의 탈출</p>

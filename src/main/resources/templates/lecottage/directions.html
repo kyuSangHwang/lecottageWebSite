@@ -24,6 +24,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap" rel="stylesheet">
     <!--bootStrapIcon-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!--Animation On Scroll CSS/JS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </head>
 <body style="overflow-x: hidden">
@@ -43,14 +46,14 @@
             </div>
         </div>
 
-        <div class="directions-middle-wrapper">
+        <div class="directions-middle-wrapper aos-animate" data-aos="fade-up">
             <p>THE CENTER OF YANGPYEONG NEW HEALING PLACE</p>
             <p>HIGH-END, PRESTIGE HOUSE</p>
             <p>양평의 새로운 지평을 열다</p>
         </div>
 
         <div class="directions-mapWrap-wrapper">
-            <div class="directions-main-wrapper__wr">
+            <div class="directions-main-wrapper__wr aos-animate" data-aos="fade-right">
                 <div id="map" class="directions-mapWrap-wrapper__map"></div>
                 <div class="directions-mapWrap-wrapper__info">
                     <p>현장사무소</p>
@@ -59,7 +62,7 @@
                 </div>
             </div>
 
-            <div class="directions-main-wrapper__wr">
+            <div class="directions-main-wrapper__wr aos-animate" data-aos="fade-left">
                 <div id="map2" class="directions-mapWrap-wrapper__map"></div>
                 <div class="directions-mapWrap-wrapper__info">
                     <p>서울사무실</p>

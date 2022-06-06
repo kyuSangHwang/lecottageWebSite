@@ -21,6 +21,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap" rel="stylesheet">
+    <!--Animation On Scroll CSS/JS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </head>
 <body style="overflow-x: hidden">
@@ -31,8 +34,8 @@
 
         <div class="businessInfo-main-wrapper">
             <div class="businessInfo-main-wrapper__img">
-                <div class="blackbox">
-                    <div>
+                <div class="blackbox aos-animate" data-aos="fade-right" >
+                    <div class="aos-animate" data-aos="fade-up">
                         <p>Summary</p>
                         <p>Le COTTAGE</p>
                         <p>르코테지 사업개요</p>
@@ -42,11 +45,11 @@
         </div>
 
         <div class="businessInfo-summary-wrapper js-businessInfo-summary-wrapper">
-            <div class="businessInfo-summary-wrapper__box">
+            <div class="businessInfo-summary-wrapper__box aos-animate" data-aos="fade-right">
                 <img class="businessInfo-summary-wrapper__box__img" src="images/lecottage/businessInfo/businessInfoOverview.jpg">
             </div>
 
-            <div class="businessInfo-summary-wrapper__box__text">
+            <div class="businessInfo-summary-wrapper__box__text aos-animate" data-aos="fade-left">
                 <p>LECOTTAGE YANGPYEONG</p>
                 <div class="businessInfo-summary-wrapper__box__text__big">
                     <span>양평의</span>
