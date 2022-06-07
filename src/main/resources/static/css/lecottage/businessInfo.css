@@ -49,7 +49,7 @@
     font-size: 40px;
     text-align: right;
     align-self: center;
-    margin-top: 50px;
+    margin-top: 118px;
     margin-left: 130px;
     animation: fadeInRight 1s;
 }
@@ -85,7 +85,7 @@
 
 .businessInfo-summary-wrapper__box__text__info {
     font-size: 16px;
-    margin-top: 50px;
+    margin-top: 80px;
     width: 400px;
     list-style: none;
 }
