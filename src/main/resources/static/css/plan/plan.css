@@ -224,8 +224,8 @@ img {
 .plan-container__content-wrapper__content-box .plan-container__content-wrapper__content-box__plan-wrapper__life-quotes .img {
     position: absolute;
     right: 0;
-    top: 200px;
-    max-width: 65%;
+    top: 10.3vw;
+    max-width: 62%;
 }
 
 .plan-container__content-wrapper__content-box .plan-container__content-wrapper__content-box__plan-wrapper__plan-info {
@@ -279,11 +279,19 @@ img {
 
 /** Plan Swiper **/
 .swiper-button-next {
-    right: 33px !important;
+    right: 10px !important;
 }
 
 .swiper-button-prev {
-    left: 33px !important;
+    left: 10px !important;
+}
+
+.swiper-button-next-unique {
+    right: 79px !important;
+}
+
+.swiper-button-prev-unique {
+    left: 79px !important;
 }
 
 .swiper-slide {
