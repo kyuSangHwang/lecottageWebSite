@@ -43,3 +43,8 @@
 .footer-container__wrapper p span {
     width: 20px;
 }
+
+/* 반응형 모바일 세로 기준 */
+@media (max-width: 768px) {
+
+}

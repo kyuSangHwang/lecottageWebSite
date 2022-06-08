@@ -400,3 +400,8 @@ ul, ol {
 .main-container__services-content__wrapper__swiper-content .swiper-wrapper .swiper-slide .swiper-slide__text p {
     font-size: 20px;
 }
+
+/* 반응형 모바일 세로 기준 */
+@media (max-width: 768px) {
+
+}

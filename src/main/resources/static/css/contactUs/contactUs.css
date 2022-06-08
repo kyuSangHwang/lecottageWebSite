@@ -192,3 +192,8 @@ th td {
     text-align: center;
     font-size: 18px;
 }
+
+/* 반응형 모바일 세로 기준 */
+@media (max-width: 768px) {
+
+}

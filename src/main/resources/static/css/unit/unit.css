@@ -418,3 +418,8 @@ ul.unit-container__unit-wrapper__box__content__section-2__wrapper__under-ul p {
     left: 0;
     top: 20px;
 }
+
+/* 반응형 모바일 세로 기준 */
+@media (max-width: 768px) {
+
+}

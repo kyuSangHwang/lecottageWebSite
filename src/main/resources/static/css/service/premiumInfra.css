@@ -132,3 +132,7 @@
     object-position: 50% 100%;
 }
 
+/* 반응형 모바일 세로 기준 */
+@media (max-width: 768px) {
+
+}
