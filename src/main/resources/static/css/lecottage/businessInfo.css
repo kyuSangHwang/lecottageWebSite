@@ -115,5 +115,23 @@
 
 /* 반응형 모바일 세로 기준 */
 @media (max-width: 768px) {
+    .businessInfo-main-wrapper__img {
+        background-position: center right 40%;
+    }
 
+    .blackbox > div {
+        margin-left: 30px;
+    }
+
+    .blackbox > div > p:nth-child(1) {
+        font-size: 14px;
+    }
+
+    .blackbox > div > p:nth-child(2) {
+        font-size: 30px;
+    }
+
+    .blackbox > div > p:nth-child(3) {
+        font-size: 14px;
+    }
 }
