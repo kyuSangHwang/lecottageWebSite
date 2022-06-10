@@ -11,7 +11,6 @@ ul, ol {
 
 }
 
-
 /***** cover-content *****/
 .main-container__cover-content {
     background: url("../../images/main/main.jpg") no-repeat center center / cover;
@@ -399,6 +398,96 @@ ul, ol {
 
 .main-container__services-content__wrapper__swiper-content .swiper-wrapper .swiper-slide .swiper-slide__text p {
     font-size: 20px;
+}
+
+/*모달창*/
+.modal-dialog {
+    display: table;
+}
+
+.modal-title {
+    font-weight: 900;
+    font-size: 25px;
+    margin: 0 auto;
+}
+
+.modal-content {
+    width: 875px;
+    height: 600px;
+    top: 70px;
+}
+
+.modal-body-content {
+    background: url("../../images/main/popup.jpg");
+    background-size: cover;
+}
+
+.modal-contactUs {
+    text-align: center;
+}
+
+.modal-icon {
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 600;
+    display: inline-block;
+    color: #a9a9a9;
+    text-decoration: none;
+}
+
+.modal-icon:hover {
+    color: black;
+}
+
+.tel {
+    float: left;
+    margin-left: 25px;
+    padding: 10px 0;
+}
+
+.reserv {
+    float: right;
+    margin-right: 25px;
+    padding: 10px 0;
+}
+
+.modal-footer {
+    height: 30px;
+    padding: 5px 10%;
+    margin: 3px;
+    justify-content: center;
+}
+
+.btn-primary {
+    position: absolute;
+    justify-content: center;
+    margin-right: 150px;
+    margin-top: 6px;
+}
+
+.btn-secondary {
+    border-radius: 150px;
+    width: 80px;
+    height: 80px;
+    top: 45px;
+    position: relative;
+}
+
+.modal-footer > label {
+    position: absolute;
+}
+
+h3, h5{
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+h5 > span {
+    color: #a07a4b;
+}
+
+ol, ul {
+    padding-left: 0;
 }
 
 /* 반응형 모바일 세로 기준 */

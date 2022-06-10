@@ -33,17 +33,6 @@
     height: auto;
 }
 
-@keyframes fadeInLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0%);
-    }
-}
-
 .businessInfo-summary-wrapper__box__text {
     font-weight: 500;
     font-size: 40px;
@@ -134,4 +123,35 @@
     .blackbox > div > p:nth-child(3) {
         font-size: 14px;
     }
+
+    .businessInfo-summary-wrapper {
+        margin-top: 0;
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+
+    .businessInfo-summary-wrapper__box__img {
+        padding: 60px 0;
+    }
+
+    .businessInfo-summary-wrapper__box__text {
+        text-align: left;
+        padding-right: 120px;
+        margin: 0;
+    }
+
+    .businessInfo-summary-wrapper__box__text > p {
+        font-size: 14px !important;
+    }
+
+    .businessInfo-summary-wrapper__box__text__big {
+        font-size: 30px;
+    }
+
+    .businessInfo-summary-wrapper__box__text__info {
+        margin-top: 50px;
+    }
+
 }

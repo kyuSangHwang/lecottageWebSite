@@ -54,4 +54,33 @@ $(document).ready(function () {
 
     });
 
+    const cookiedata = document.cookie; //쿠키
+    $(".btn-modal").hide(); //팝업창 버튼 숨기기
+
+    if (cookiedata.indexOf("close=Y") < 0) { //누르지않았으면
+        $(".btn-modal").trigger("click"); //강제로 띄우기
+        $(".modal").show(); //모달창 띄우기
+    } else {
+        $(".modal").hide(); //모달창 숨기기
+    }
+
+    $(".btn-secondary").click(function () {
+        couponClose();
+    });
+
 });
+
+function setCookie(cname, cvalue, exdays) {
+    let todayDate = new Date();
+    todayDate.setTime(todayDate.getTime() + (exdays*24*60*60*1000));
+
+    let expires = "expires=" + todayDate.toUTCString(); // UTC기준의 시간에 exdays인자로 받은 값에 의해서 cookie가 설정 됩니다.
+    document.cookie = cname + "=" + cvalue + "; " + expires;
+}
+
+function couponClose(){
+    if($("input[name='chkbox']").is(":checked") == true){
+        setCookie("close","Y",1);   //기간( ex. 1은 하루, 7은 일주일)
+    }
+    $(".modal").hide();
+}

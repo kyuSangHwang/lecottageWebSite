@@ -92,5 +92,45 @@
 
 /* 반응형 모바일 세로 기준 */
 @media (max-width: 768px) {
+    .directions-main-wrapper__img {
+        background-position: center right 10%;
+    }
 
+    .blackbox > div {
+        margin-left: 30px;
+    }
+
+    .blackbox > div > p:nth-child(1) {
+        font-size: 14px;
+    }
+
+    .blackbox > div > p:nth-child(2) {
+        font-size: 30px;
+    }
+
+    .blackbox > div > p:nth-child(3) {
+        font-size: 14px;
+    }
+
+    .directions-middle-wrapper > p {
+        font-size: 30px;
+    }
+
+    .directions-mapWrap-wrapper {
+        width: 768px;
+        margin: 100px auto;
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+
+    .directions-main-wrapper__wr {
+        margin-bottom: 30px;
+    }
+
+    .directions-mapWrap-wrapper__map {
+        width: 350px;
+        height: 360px;
+    }
 }
