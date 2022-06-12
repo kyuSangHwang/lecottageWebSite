@@ -144,10 +144,12 @@
 
     .businessInfo-summary-wrapper__box__text > p {
         font-size: 14px !important;
+        margin-left: 20px;
     }
 
     .businessInfo-summary-wrapper__box__text__big {
         font-size: 30px;
+        margin-left: 20px;
     }
 
     .businessInfo-summary-wrapper__box__text__info {
