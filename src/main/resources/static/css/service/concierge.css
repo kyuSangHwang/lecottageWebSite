@@ -153,5 +153,122 @@
 
 /* 반응형 모바일 세로 기준 */
 @media (max-width: 768px) {
+    .concierge-main-wrapper__img {
+        background-position: center right 10%;
+    }
 
+    .blackbox > div {
+        margin-left: 30px;
+    }
+
+    .blackbox > div > p:nth-child(1) {
+        font-size: 14px;
+    }
+
+    .blackbox > div > p:nth-child(2) {
+        font-size: 30px;
+    }
+
+    .blackbox > div > p:nth-child(3) {
+        font-size: 14px;
+    }
+
+    .concierge-middle-wrapper {
+        width: 90%;
+        margin: 60px auto;
+        font-size: 30px;
+    }
+
+    .concierge-main-wrapper > p:nth-child(4) {
+        font-size: 16px;
+    }
+
+    .concierge-middle-wrapper > p:nth-child(4) {
+        font-size: 18px;
+    }
+
+    .concierge-sec-wrapper__conciergeDesk__img {
+        width: 100%;
+        height: 250px;
+        margin-left: 0;
+    }
+
+    .concierge-sec-wrapper > ul:nth-child(1) {
+        margin-top: 0;
+    }
+
+    .concierge-sec-wrapper__conciergeDesk > div {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .concierge-sec-wrapper__conciergeDesk__info {
+        text-align: left;
+        margin-top: 20px !important;
+    }
+
+    .infoText > p:nth-child(2) {
+        margin-bottom: 20px;
+    }
+
+    .infoText > p:nth-of-type(n+3) {
+        letter-spacing: -0.1em;
+    }
+
+    .infoBox > ul:nth-child(1) > li:nth-child(1) {
+        margin-bottom: 100px !important;
+    }
+
+    .infoBox > ul:nth-child(1) > li:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .infoBox > ul:nth-child(1) > li:nth-child(3) {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    ul:nth-child(2) > li:nth-child(n) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .infoText {
+        margin-top: 20px;
+    }
+
+    .concierge-sec-wrapper > ul:nth-child(1) {
+        margin: 50px auto 100px !important;
+    }
+
+    .dp > li > img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .dp-right {
+        width: 100%;
+    }
+
+    .dp-left {
+        width: 100%;
+    }
+
+    .concierge-sec-wrapper-wr > li:nth-child(2n) > img {
+        margin-left: 0px;
+    }
+
+    ul:nth-child(2) > li:nth-child(2n) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .dp > li {
+        margin-bottom: 50px;
+    }
 }
