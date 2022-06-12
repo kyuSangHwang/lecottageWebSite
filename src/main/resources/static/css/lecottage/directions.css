@@ -117,9 +117,10 @@
     }
 
     .directions-mapWrap-wrapper {
-        width: 768px;
+        width: 100%;
         margin: 100px auto;
         display: flex;
+        flex-direction: column;
         justify-content: start;
         flex-wrap: wrap;
         overflow: hidden;
@@ -132,5 +133,10 @@
     .directions-mapWrap-wrapper__map {
         width: 350px;
         height: 360px;
+        margin: 0 auto;
+    }
+
+    .directions-mapWrap-wrapper__info {
+        margin-left: 20px;
     }
 }
