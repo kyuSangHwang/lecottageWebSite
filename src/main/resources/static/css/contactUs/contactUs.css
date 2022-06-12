@@ -195,5 +195,42 @@ th td {
 
 /* 반응형 모바일 세로 기준 */
 @media (max-width: 768px) {
+    .contactUs-title-wrapper {
+        margin: 120px auto 60px;
+    }
 
+    .contactUs-reservation-wrapper-wr {
+        flex-direction: column;
+    }
+
+    .contactUs-reservation-wrapper-wr li {
+        width: 100%;
+    }
+
+    .contactUs-privacyBox-wrapper > h4 {
+        font-size: 18px;
+        letter-spacing: -0.1em;
+    }
+
+    .contactUs-privacyBox-wrapper > p {
+        font-size: 14px;
+    }
+
+    .contactUs-privacyBox-wrapper > div > table > tbody > tr > td {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .contactUs-agree-wrapper {
+        display: block;
+        align-items: baseline;
+    }
+
+    .contactUs-agree-wrapper h4 {
+        font-size: 16px;
+    }
+
+    .contactUs-agree-wrapper > div {
+        display: inline-block;
+    }
 }
