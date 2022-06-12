@@ -65,5 +65,91 @@
 
 /* 반응형 모바일 세로 기준 */
 @media (max-width: 768px) {
+    .amenity-main-wrapper__img {
+        background-position: center right 10%;
+    }
+
+    .blackbox > div {
+        margin-left: 30px;
+    }
+
+    .blackbox > div > p:nth-child(1) {
+        font-size: 14px;
+    }
+
+    .blackbox > div > p:nth-child(2) {
+        font-size: 30px;
+    }
+
+    .blackbox > div > p:nth-child(3) {
+        font-size: 14px;
+    }
+
+    .amenity-middle-wrapper {
+        font-size: 30px;
+    }
+
+    .amenity-middle-wrapper > p:nth-child(5)  {
+        font-size: 16px;
+    }
+
+    .amenity-middle-wrapper > p:nth-child(6) {
+        font-size: 18px;
+        margin-bottom: 60px;
+    }
+
+    .amenity-sec-wrapper {
+        width: 100%;
+        margin: 0 auto;
+        display: inline-block;
+        position: relative;
+    }
+
+    .amenity-sec-wrapper__outDoorStage__img {
+        width: 100%;
+    }
+
+    .amenity-sec-wrapper__outDoorStage__info infoText {
+        width: 100%;
+    }
+
+    .infoBox {
+        margin: 0 auto;
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .infoBox > img {
+        width: 100%;
+    }
+
+    .infoText {
+        width: 100%;
+    }
+
+    .infoText--right {
+        padding-left: 0px;
+    }
+
+    .infoText--left {
+        padding-right: 0px;
+    }
+
+    .infoBox > div[class*="__img"] {
+        height: 150px;
+    }
+
+    .swiper-container {
+        width: 100%;
+        height: 150px;
+    }
+
+    .amenity-sec-wrapper__pool {
+        flex-direction: column-reverse;
+    }
+
+    .amenity-sec-wrapper__concertHall {
+        flex-direction: column-reverse;
+    }
 
 }
