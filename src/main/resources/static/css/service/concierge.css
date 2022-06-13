@@ -157,22 +157,6 @@
         background-position: center right 10%;
     }
 
-    .blackbox > div {
-        margin-left: 30px;
-    }
-
-    .blackbox > div > p:nth-child(1) {
-        font-size: 14px;
-    }
-
-    .blackbox > div > p:nth-child(2) {
-        font-size: 30px;
-    }
-
-    .blackbox > div > p:nth-child(3) {
-        font-size: 14px;
-    }
-
     .concierge-middle-wrapper {
         width: 90%;
         margin: 60px auto;
