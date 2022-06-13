@@ -111,6 +111,11 @@
 
     .amenity-sec-wrapper__outDoorStage__info infoText {
         width: 100%;
+        margin: 20px 0 80px;
+    }
+
+    .infoText > p:nth-child(2) {
+        font-size: 30px;
     }
 
     .infoBox {
@@ -125,6 +130,7 @@
 
     .infoText {
         width: 100%;
+        margin: 20px 0 80px;
     }
 
     .infoText--right {
