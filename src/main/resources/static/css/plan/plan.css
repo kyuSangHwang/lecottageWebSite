@@ -300,5 +300,98 @@ img {
 
 /* 반응형 모바일 세로 기준 */
 @media (max-width: 768px) {
+    ul.side_quick {
+        display: none;
+    }
+
+    .plan-container__content-wrapper__summary-box__first-content__title h3 {
+        font-size: 30px;
+    }
+
+    .plan-container__content-wrapper__summary-box__first-content__title p {
+        font-size: 14px;
+    }
+
+    .plan-container__content-wrapper__summary-box__second-content__box {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .plan-container__content-wrapper__summary-box__second-content__box__img {
+        width: 100%;
+        margin: 40px auto 20px;
+        height: 30vh;
+    }
+
+    .plan-container__content-wrapper__summary-box__second-content__box__content {
+         margin-left: 0;
+    }
+
+    .plan-container__content-wrapper__summary-box__second-content__box__content ul {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .plan-container__content-wrapper__content-box__plan-wrapper__summary-box .plan-container__content-wrapper__content-box__plan-wrapper__summary-box__title {
+        font-size: 36px;
+    }
+
+    .plan-container__content-wrapper__summary-box__second-content__box__content ul > li {
+        margin: 0 5px;
+    }
+
+    .plan-container__content-wrapper__summary-box__second-content__box__content li {
+        width: 20vw;
+        height: 7vh;
+    }
+
+    .plan-container__content-wrapper__summary-box__second-content__box__content p:first-child {
+        display: none;
+    }
+
+    .plan-container__content-wrapper__summary-box__second-content__box__content__text {
+        display: none;
+    }
+
+    .plan-container__content-wrapper__content-box__plan-wrapper__summary-box {
+        margin: 60px 0;
+    }
+
+    .plan-container__content-wrapper__content-box .plan-container__content-wrapper__content-box__plan-wrapper__life-quotes .img {
+        position: relative;
+        top: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .plan-container__content-wrapper__content-box .plan-container__content-wrapper__content-box__plan-wrapper__life-quotes {
+        margin: 50px 0 0;
+    }
+
+
+    .plan-container__content-wrapper__content-box .plan-container__content-wrapper__content-box__plan-wrapper__plan-info {
+        width: 100%;
+    }
+
+    .plan-container__content-wrapper__content-box .plan-text h3 {
+        display: none;
+    }
+
+    .plan-container__content-wrapper__content-box .plan-container__content-wrapper__content-box__plan-wrapper__plan-info .plan-text ul {
+        margin-top: -60px;
+    }
+
+    .swiper {
+        margin-top: -45px;
+    }
+
+    .swiper-button-next-unique {
+        right: 5px !important;
+    }
+
+    .swiper-button-prev-unique {
+        left: 5px !important;
+    }
 
 }
