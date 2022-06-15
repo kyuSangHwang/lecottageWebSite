@@ -421,6 +421,9 @@ ul.unit-container__unit-wrapper__box__content__section-2__wrapper__under-ul p {
 
 /* 반응형 모바일 세로 기준 */
 @media (max-width: 768px) {
+    ul.side_quick {
+        display: none;
+    }
     .unit-container__unit-wrapper__box__summary__wrapper__first-box__title h3 {
         font-size: 30px;
     }
@@ -459,7 +462,7 @@ ul.unit-container__unit-wrapper__box__content__section-2__wrapper__under-ul p {
     }
 
     .unit-container__unit-wrapper__box__content ul {
-        height: 700px;
+        height: 710px;
         flex-direction: column;
     }
 
