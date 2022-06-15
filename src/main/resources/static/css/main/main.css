@@ -493,4 +493,32 @@ ol, ul {
 /* 반응형 모바일 세로 기준 */
 @media (max-width: 768px) {
 
+    /* 팝업 */
+    .modal-dialog {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .modal-content {
+        width: 90%;
+        height: 574px;
+        margin: 0 5%;
+    }
+
+    .modal-icon {
+        font-size: 18px;
+    }
+
+    .modal-header {
+        text-align: center;
+    }
+
+    .modal-body-content {
+        background: url("../../images/main/popupM.jpg");
+        background-size: cover;
+    }
+
+    .modal-title {
+        font-size: 20px;
+    }
 }
