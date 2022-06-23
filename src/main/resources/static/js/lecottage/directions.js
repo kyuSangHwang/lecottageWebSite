@@ -1,5 +1,30 @@
 $(document).ready(function () {
-    //카카오맵 api 왼쪽
+
+    const filter = "win16|win32|win64|mac|macintel";
+    const webType = "";
+    const header = $(".header");
+
+    if (navigator.platform) {
+        if (0 > filter.indexOf(navigator.platform.toLowerCase())) {
+            //mobile
+            mobileStatus = true;
+            header.remove();
+
+            $('body').prepend("<div class='sidebarWrap'></div>");
+            $(".sidebarWrap").load("/mobile/sideBar");
+
+            $(function () {
+                $.getScript("/js/fragments/mobileSideBar.js", function (data, textStatus, jqxhr) {
+                    console.log(data); // Data returned
+                    console.log(textStatus); // Success
+                    console.log(jqxhr.status); // 200
+                    console.log("Load was performed.");
+                });
+            });
+        }
+    }
+
+    /*//카카오맵 api 왼쪽
     var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
     var options = { //지도를 생성할 때 필요한 기본 옵션
         center: new kakao.maps.LatLng(37.470758, 127.594064), //지도의 중심좌표.
@@ -69,7 +94,7 @@ $(document).ready(function () {
         e.parentElement.previousSibling.style.display = "none";
         e.parentElement.parentElement.style.border = "0px";
         e.parentElement.parentElement.style.background = "unset";
-    });
+    });*/
 
     AOS.init({
         // Global settings:
@@ -93,4 +118,5 @@ $(document).ready(function () {
         anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
     });
+
 })

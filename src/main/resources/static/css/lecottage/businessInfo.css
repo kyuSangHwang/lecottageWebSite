@@ -130,10 +130,12 @@
         justify-content: start;
         flex-wrap: wrap;
         overflow: hidden;
+        margin-bottom: 100px;
     }
 
     .businessInfo-summary-wrapper__box__img {
         padding: 60px 0;
+        min-width: 383px;
     }
 
     .businessInfo-summary-wrapper__box__text {

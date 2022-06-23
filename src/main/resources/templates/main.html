@@ -5,19 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <link rel=" shortcut icon" href="/images/favicon/favicon.ico" style="user-select: auto;">
-    <style type="text/css">
-        @-ms-viewport {
-            width: device-width;
-        }
-
-        @-o-viewport {
-            width: device-width;
-        }
-
-        @viewport {
-            width: device-width;
-        }
-    </style>
 
     <title>Le COTTAGE</title>
 
@@ -44,15 +31,18 @@
     <!--include css-->
     <link rel="stylesheet" href="/css/fragments/header.css">
     <link rel="stylesheet" href="/css/fragments/footer.css">
+    <link rel="stylesheet" href="/css/fragments/mobileSideBar.css">
     <!--include js-->
     <script type="text/javascript" src="/js/fragments/header.js"></script>
     <script type="text/javascript" src="/js/fragments/footer.js"></script>
     <!--Animation On Scroll CSS/JS-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--Font-awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 
 </head>
-<body style="overflow-x: hidden" class="body">
+<body class="body" style="overflow-x: hidden">
 <div th:include="fragments/header ::header" class="header"></div>
 
 <div class="main">

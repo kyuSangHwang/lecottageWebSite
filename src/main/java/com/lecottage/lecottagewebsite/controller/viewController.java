@@ -35,4 +35,10 @@ public class viewController {
 
     @GetMapping(value = "/contactUs")
     public String contactUs() { return "/contactUs/contactUs"; }
+
+    @GetMapping(value = "/mobile/sideBar")
+    public String mobileSideBar(){
+        return  "/fragments/mobileSideBar";
+    }
+
 }

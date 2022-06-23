@@ -178,6 +178,7 @@
 @media (max-width: 768px) {
     .blackbox > div {
         margin-left: 30px;
+        margin-top: 288px;
     }
 
     .blackbox > div > p:nth-child(1) {

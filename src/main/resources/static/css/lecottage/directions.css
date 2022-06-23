@@ -119,4 +119,9 @@
     .directions-mapWrap-wrapper__info {
         margin-left: 20px;
     }
+
+    .directions-middle-wrapper {
+        font-size: 24px;
+        letter-spacing: 0.04em;
+    }
 }

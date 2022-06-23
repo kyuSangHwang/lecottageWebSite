@@ -14,7 +14,7 @@ ul, ol {
 /***** cover-content *****/
 .main-container__cover-content {
     background: url("../../images/main/main.jpg") no-repeat center center / cover;
-    width: 101%;
+    width: 99.2vw;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -58,7 +58,7 @@ ul, ol {
 /***** text-box-content *****/
 .main-container__text-box-content {
     background: url("/images/main/mainTextBox.jpg") no-repeat center center / cover;
-    width: 100vw;
+    width: 99.2vw;
     height: 520px;
     align-items: center;
 }
@@ -418,7 +418,7 @@ ul, ol {
 }
 
 .modal-body-content {
-    background: url("../../images/main/popup.jpg");
+    background: url("../../images/main/popUp.jpg");
     background-size: cover;
 }
 
@@ -490,6 +490,36 @@ ol, ul {
     padding-left: 0;
 }
 
+
+
+
+/* layout */
+html, body{height:100%;}
+button{border:0;cursor:pointer;}
+a{color:#000;text-decoration:none;line-height:1;}
+
+.wrap{height:100%;}
+.content{position:relative;height:100%;}
+.content .section{height:100%;}
+.content .con1{background-color:#877249;}
+.content .con2{background-color:#593d91;}
+.content .con3{background-color:#ed6cc3;}
+.content .con4{background-color:#089191;}
+
+/* style */
+.box-shortcut{position:fixed;right:50px;top:50%;z-index:9000;}
+.box-shortcut{border-radius:10px;background:#fff}
+.box-shortcut .menu > li > a{display:block;padding:10px;box-sizing:border-box;}
+.box-shortcut .menu > li > .on{background:#ed8b3b;}
+.box-shortcut .menu > li:first-child > .on{border-radius:10px 10px 0 0;}
+.box-shortcut .btn-scroll-top{padding:10px;border-radius:0 0 10px 10px;background:#000;}
+.box-shortcut .btn-scroll-top{color:#fff;}
+
+
+
+
+
+
 /* 반응형 모바일 세로 기준 */
 @media (max-width: 768px) {
 
@@ -530,6 +560,7 @@ ol, ul {
     .main-container__cover-content__wrapper__main-text {
         width: 90%;
         margin-left: 1.875em;
+        margin-top: 70px;
     }
 
     .main-container__cover-content__wrapper h3:nth-child(1) {
@@ -563,11 +594,11 @@ ol, ul {
     }
 
     .main-container__intro-content__wrapper__first-box__title h3, .main-container__services-content__wrapper__swiper-content__title-box h3 {
-        font-size: 2.8125em;
+        font-size: 2em;
     }
 
     .main-container__intro-content__wrapper__first-box__title h3 > b, .main-container__services-content__wrapper__swiper-content__title-box h3 {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 
     .main-container__intro-content {
@@ -635,7 +666,7 @@ ol, ul {
     }
 
     .main-container__boast-content__wrapper .txt h3 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         text-align: center;
     }
 
@@ -650,7 +681,7 @@ ol, ul {
 
     .main-container__services-content__wrapper__swiper-content__swiper-box {
         width: 80%;
-        margin: 0 auto;
+        margin: 30px auto 0;
     }
 
     .swiper {
@@ -662,7 +693,7 @@ ol, ul {
     }
 
     .main-container__services-content__wrapper__swiper-content .swiper-wrapper .swiper-slide .swiper-slide__text h3 {
-        font-size: 1.875rem;
+        font-size: 1.5rem;
         letter-spacing: 0.2em;
     }
 
@@ -677,4 +708,21 @@ ol, ul {
         height: 57.3%;
         top: 8rem;
     }
+
+    .main-container__boast-content__wrapper .txt p {
+        text-align: center;
+    }
+
+    .main-container__services-content__wrapper__swiper-content .swiper-wrapper .swiper-slide .swiper-slide__text p {
+        font-size: 17px;
+    }
+
+    .main-container__intro-content__wrapper__first-box__title p:nth-child(2), .main-container__services-content__wrapper__swiper-content__title-box p:nth-child(2) {
+        font-size: 17px;
+    }
+
+    .main-container__intro-content__wrapper__first-box__title p:nth-child(2), .main-container__services-content__wrapper__swiper-content__title-box p:nth-child(2) {
+        font-size: 15px;
+    }
+
 }

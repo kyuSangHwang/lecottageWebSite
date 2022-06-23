@@ -1,5 +1,8 @@
+let mobileStatus = false;
+let nowSearchData = "";
 
 $(document).ready(function () {
+    nowSearchData = location.search;
 
     new Swiper(".mySwiper1", {
         direction: 'horizontal',
@@ -68,6 +71,46 @@ $(document).ready(function () {
         couponClose();
     });
 
+    let inquiryBodyContentP = $('.inquiryBodyContent P');
+    let categoryBodyContent = $('.categoryBodyContent P');
+    if(nowSearchData === "?lang=ko"){
+        inquiryBodyContentP.css("font-size", "13px");
+        inquiryBodyContentP.css("line-height", "19px");
+
+        categoryBodyContent.css("font-size", "13px");
+        categoryBodyContent.css("line-height", "19px");
+    }else{
+        inquiryBodyContentP.css("font-size", "14px");
+        inquiryBodyContentP.css("line-height", "21px");
+
+        categoryBodyContent.css("font-size", "13px");
+        categoryBodyContent.css("line-height", "19px");
+    }
+
+    const filter = "win16|win32|win64|mac|macintel";
+    const webType = "";
+    const header = $(".header");
+
+    if (navigator.platform) {
+        if (0 > filter.indexOf(navigator.platform.toLowerCase())) {
+            //mobile
+            mobileStatus = true;
+            header.remove();
+            
+            $('body').prepend("<div class='sidebarWrap'></div>");
+            $(".sidebarWrap").load("/mobile/sideBar");
+
+            $(function () {
+                $.getScript("/js/fragments/mobileSideBar.js", function (data, textStatus, jqxhr) {
+                    console.log(data); // Data returned
+                    console.log(textStatus); // Success
+                    console.log(jqxhr.status); // 200
+                    console.log("Load was performed.");
+                });
+            });
+        }
+    }
+
 });
 
 function setCookie(cname, cvalue, exdays) {
@@ -82,5 +125,74 @@ function couponClose(){
     if($("input[name='chkbox']").is(":checked") == true){
         setCookie("close","Y",1);   //기간( ex. 1은 하루, 7은 일주일)
     }
+
     $(".modal").hide();
 }
+
+(function($){
+
+    $.fn.quickMenu = function(){
+        return this.each(function(){
+            let idx = 0;
+            let h = [];
+            let $wrap = $(this);
+            let $menu = $wrap.find(".menu");
+            let $btn = $menu.children("li").children("a");
+            let $btnScrollTop = $wrap.find(".btn-scroll-top");
+            let $section = $(".section");
+            let wrapH = $wrap.outerHeight();
+            let wrapT = $wrap.position().top;
+            let nowScroll = 0;
+            let scrolling = true;
+
+            function btnActive(num){
+                $btn.not($btn.eq(num)).removeClass("on");
+                $btn.eq(num).addClass("on");
+            }
+
+            function moveScroll(num){
+                if(scrolling){
+                    scrolling = false;
+                    $("html, body").animate({scrollTop : num}, function(){scrolling = true});
+                }
+            }
+
+            btnActive(idx);
+
+            $wrap.css({"margin-top": -(wrapH / 2)});
+
+            $btn.on("click", function(e){
+                e.preventDefault();
+                idx = $(this).parent().index();
+                let conT = $section.eq(idx).offset().top;
+
+                moveScroll(conT);
+            });
+
+            $btnScrollTop.on("click", function(e){
+                e.preventDefault();
+
+                moveScroll(0);
+            });
+
+            $(window).scroll(function(){
+
+                nowScroll = $(this).scrollTop();
+
+                $section.each(function(idx){
+                    h[idx] = $(this).offset().top
+
+                    if(nowScroll >= h[idx]){
+                        btnActive(idx);
+                    }
+                });
+            });
+
+        });
+    }
+
+})(jQuery);
+
+$(function(){
+    $(".box-shortcut").quickMenu();
+});

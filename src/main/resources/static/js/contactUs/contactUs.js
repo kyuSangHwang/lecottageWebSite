@@ -47,5 +47,30 @@ $(document).ready(function() {
                     console.log('FAILED...', error);
                 });
         }
-    })
+    });
+
+    const filter = "win16|win32|win64|mac|macintel";
+    const webType = "";
+    const header = $(".header");
+
+    if (navigator.platform) {
+        if (0 > filter.indexOf(navigator.platform.toLowerCase())) {
+            //mobile
+            mobileStatus = true;
+            header.remove();
+            
+            $('body').prepend("<div class='sidebarWrap'></div>");
+            $(".sidebarWrap").load("/mobile/sideBar");
+
+            $(function () {
+                $.getScript("/js/fragments/mobileSideBar.js", function (data, textStatus, jqxhr) {
+                    console.log(data); // Data returned
+                    console.log(textStatus); // Success
+                    console.log(jqxhr.status); // 200
+                    console.log("Load was performed.");
+                });
+            });
+        }
+    }
+
 });

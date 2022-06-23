@@ -193,6 +193,11 @@ th td {
     font-size: 18px;
 }
 
+/* 커밋 전 삭제 */
+.fa-bars:before {
+    color: black !important;
+}
+
 /* 반응형 모바일 세로 기준 */
 @media (max-width: 768px) {
     .contactUs-title-wrapper {
@@ -232,5 +237,9 @@ th td {
 
     .contactUs-agree-wrapper > div {
         display: inline-block;
+    }
+
+    .fa-bars:before {
+        color: black !important;
     }
 }
