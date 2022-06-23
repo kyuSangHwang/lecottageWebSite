@@ -109,19 +109,7 @@
     }
 
     .blackbox > div {
-        margin-left: 30px;
-    }
-
-    .blackbox > div > p:nth-child(1) {
-        font-size: 14px;
-    }
-
-    .blackbox > div > p:nth-child(2) {
-        font-size: 30px;
-    }
-
-    .blackbox > div > p:nth-child(3) {
-        font-size: 14px;
+        margin-left: 7.5000vw;
     }
 
     .businessInfo-summary-wrapper {
@@ -133,26 +121,27 @@
     }
 
     .businessInfo-summary-wrapper__box__img {
-        padding: 60px 0;
+        padding: 15.0000vw 0;
     }
 
     .businessInfo-summary-wrapper__box__text {
         text-align: left;
-        padding-right: 120px;
+        padding-right: 30.0000vw;
         margin: 0;
     }
 
     .businessInfo-summary-wrapper__box__text > p {
         font-size: 14px !important;
-        margin-left: 20px;
+        margin-left: 5.0000vw;
     }
 
     .businessInfo-summary-wrapper__box__text__big {
-        font-size: 30px;
-        margin-left: 20px;
+        font-size: 7.5000vw;
+        margin-left: 5.0000vw;
     }
 
     .businessInfo-summary-wrapper__box__text__info {
-        margin-top: 50px;
+        margin-top: 12.5000vw;
+        font-size: 4.0000vw;
     }
 }
