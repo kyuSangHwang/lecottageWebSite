@@ -421,20 +421,24 @@ ul.unit-container__unit-wrapper__box__content__section-2__wrapper__under-ul p {
 
 /* 반응형 모바일 세로 기준 */
 @media (max-width: 768px) {
+    .unit-container__unit-wrapper__box__content .txt p {
+        font-size: 4.25vw;
+    }
+
     ul.side_quick {
         display: none;
     }
     .unit-container__unit-wrapper__box__summary__wrapper__first-box__title h3 {
-        font-size: 30px;
+        font-size: 7.5000vw;
     }
 
     .unit-container__unit-wrapper__box__summary__wrapper__first-box__title p:nth-child(2) {
-        font-size: 14px;
+        font-size: 3.5000vw;
         margin-left: 0;
     }
 
     .unit-container__unit-wrapper__box__summary__wrapper__second-box_content__image-box__image .unit-container__unit-wrapper__box__summary__wrapper__second-box_content__image-box__image__content {
-        font-size: 0.58rem;
+        font-size: 2.3200vw;
     }
 
     .unit-container__unit-wrapper__box__summary {
@@ -462,7 +466,7 @@ ul.unit-container__unit-wrapper__box__content__section-2__wrapper__under-ul p {
     }
 
     .unit-container__unit-wrapper__box__content ul {
-        height: 710px;
+        height: 210vw;
         flex-direction: column;
     }
 
@@ -475,6 +479,10 @@ ul.unit-container__unit-wrapper__box__content__section-2__wrapper__under-ul p {
         margin-right: 0;
     }
 
+    .unit-container__unit-wrapper__box__content .txt b {
+        line-height: 9.5vw;
+    }
+
     .unit-container__unit-wrapper__box__content .txt.right {
          padding-left: 0;
     }
@@ -485,7 +493,7 @@ ul.unit-container__unit-wrapper__box__content__section-2__wrapper__under-ul p {
 
     .unit-container__unit-wrapper__box__content .txt h3:after {
         content: ' ';
-        width: 52.6%;
+        width: 52.6% !important;
     }
 
     .unit-container__unit-wrapper__box__content__section-2__wrapper__under-ul li:after {
