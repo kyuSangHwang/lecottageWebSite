@@ -506,7 +506,7 @@ ol, ul {
     }
 
     .modal-icon {
-        font-size: 1.125em;
+        font-size: 18px;
     }
 
     .modal-header {
@@ -529,33 +529,33 @@ ol, ul {
 
     .main-container__cover-content__wrapper__main-text {
         width: 90%;
-        margin-left: 1.875em;
+        margin-left: 7.5000vw;
     }
 
     .main-container__cover-content__wrapper h3:nth-child(1) {
         font-weight: 400;
-        font-size: 3.5rem;
-        margin-bottom: -20px;
+        font-size: 14.0000vw;
+        margin-bottom: -5.0000vw;
     }
 
     .main-container__cover-content__wrapper h3:nth-child(2) {
-        font-size: 3.5rem;
+        font-size: 14.0000vw;
     }
 
     .main-container__cover-content__wrapper p {
-        font-size: 1.1rem;
+        font-size: 4.2500vw;
     }
 
     .main-container__text-box-content__wrapper {
-        padding: 2.8125rem 0;
+        padding: 11.2500vw 0;
     }
 
     .main-container__text-box-content__wrapper__content {
-        font-size: 1rem;
+        font-size: 4vw;
     }
 
     .main-container__intro-content__wrapper {
-        margin: 4.6875rem auto 3.75rem auto;
+        margin: 18.7500vw auto 15.0000vw auto;
     }
 
     .main-container__intro-content__wrapper__first-box__title h3, .main-container__services-content__wrapper__swiper-content__title-box h3 {
@@ -563,15 +563,15 @@ ol, ul {
     }
 
     .main-container__intro-content__wrapper__first-box__title h3, .main-container__services-content__wrapper__swiper-content__title-box h3 {
-        font-size: 2.8125em;
+        font-size: 11.2500vw;
     }
 
     .main-container__intro-content__wrapper__first-box__title h3 > b, .main-container__services-content__wrapper__swiper-content__title-box h3 {
-        font-size: 2rem;
+        font-size: 8.0000vw;
     }
 
     .main-container__intro-content {
-        padding: 1.875rem 0;
+        padding: 7.5000vw 0;
     }
 
     .main-container__intro-content__wrapper__second-box_content:nth-child(1) {
@@ -588,25 +588,25 @@ ol, ul {
 
     .main-container__intro-content__wrapper__second-box {
         width: 100%;
-        margin: 1.5625rem auto;
-        padding: 1.25rem 0 1.875rem;
+        margin: 6.2500vw auto;
+        padding: 5.0000vw 0 7.5000vw;
     }
 
     .main-container__intro-content__wrapper__second-box_content p:nth-child(1) {
         margin: 0 10px;
-        font-size: 1.4375rem;
-        letter-spacing: 2px;
+        font-size: 5.7500vw;
+        letter-spacing: 0.5000vw;
     }
 
     .main-container__decoration-content__wrapper__first-text p {
-        font-size: 2.3rem;
+        font-size: 9.0000vw;
         margin: 0;
-        letter-spacing: 0.2em;
+        letter-spacing: 0.7500vw;
         line-height: 1.5;
     }
     .main-container__decoration-content__wrapper__second-text strong {
-        font-size: 1rem;
-        margin-top: 1.875em;
+        font-size: 4.0000vw;
+        margin-top: 7.5000vw;
     }
 
     .main-container__boast-content__wrapper {
@@ -614,7 +614,7 @@ ol, ul {
     }
 
     .main-container__boast-content__wrapper ul {
-        margin: 3.125rem auto;
+        margin: 12.5000vw auto;
         display: flex;
         flex-direction: column;
         width: 80%;
@@ -625,17 +625,17 @@ ol, ul {
     }
 
     .main-container__boast-content__wrapper img {
-        height: 210px;
+        height: 52.5000vw;
     }
 
 
     .main-container__boast-content__wrapper .txt {
         width: 100%;
-        margin-top: 1.25rem;
+        margin-top: 5.0000vw;
     }
 
     .main-container__boast-content__wrapper .txt h3 {
-        font-size: 1.3rem;
+        font-size: 5.0000vw;
         text-align: center;
     }
 
@@ -655,6 +655,7 @@ ol, ul {
 
     .swiper {
         width: 100%;
+        padding-top: 13.5vw;
     }
 
     .swiper-slide {
@@ -662,19 +663,19 @@ ol, ul {
     }
 
     .main-container__services-content__wrapper__swiper-content .swiper-wrapper .swiper-slide .swiper-slide__text h3 {
-        font-size: 1.875rem;
-        letter-spacing: 0.2em;
+        font-size: 7.5000vw;
+        letter-spacing: 0.7500vw;
     }
 
     .swiper-slide img {
         width: 100%;
-        height: 210px;
+        height: 52.5000vw;
     }
 
     .swiper-button-next, .swiper-button-prev {
         background: transparent;
-        width: 3.125rem;
+        width: 50px;
         height: 57.3%;
-        top: 8rem;
+        top: 32.0000vw;
     }
 }
