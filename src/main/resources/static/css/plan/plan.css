@@ -300,16 +300,20 @@ img {
 
 /* 반응형 모바일 세로 기준 */
 @media (max-width: 768px) {
+    .blackbox > div > p:nth-child(1) {
+        font-size: 3.35vw;
+    }
+
     ul.side_quick {
         display: none;
     }
 
     .plan-container__content-wrapper__summary-box__first-content__title h3 {
-        font-size: 30px;
+        font-size: 7.5000vw;
     }
 
     .plan-container__content-wrapper__summary-box__first-content__title p {
-        font-size: 14px;
+        font-size: 3.5000vw;
     }
 
     .plan-container__content-wrapper__summary-box__second-content__box {
@@ -334,7 +338,7 @@ img {
     }
 
     .plan-container__content-wrapper__content-box__plan-wrapper__summary-box .plan-container__content-wrapper__content-box__plan-wrapper__summary-box__title {
-        font-size: 36px;
+        font-size: 9.0000vw;
     }
 
     .plan-container__content-wrapper__summary-box__second-content__box__content ul > li {
@@ -393,4 +397,20 @@ img {
         left: 5px !important;
     }
 
+    .plan-container__content-wrapper__content-box__plan-wrapper__summary-box .plan-text {
+        font-size: 4vw;
+    }
+
+    .plan-container__content-wrapper__content-box .plan-container__content-wrapper__content-box__plan-wrapper__plan-info .plan-text ul li {
+        padding: 2.5vw 0 2.5vw 27.5vw;
+        width: 66%;
+    }
+
+    .plan-container__content-wrapper__content-box .plan-container__content-wrapper__content-box__plan-wrapper__plan-info .plan-text ul li b {
+        font-size: 4vw;
+    }
+
+    .plan-container__content-wrapper__content-box .plan-container__content-wrapper__content-box__plan-wrapper__plan-info .plan-text ul li p {
+        font-size: 4vw;
+    }
 }
