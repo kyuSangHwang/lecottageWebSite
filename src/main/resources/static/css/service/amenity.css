@@ -70,16 +70,16 @@
     }
 
     .amenity-middle-wrapper {
-        font-size: 30px;
+        font-size: 7.5000vw;
     }
 
     .amenity-middle-wrapper > p:nth-child(5)  {
-        font-size: 16px;
+        font-size: 4.0000vw;
     }
 
     .amenity-middle-wrapper > p:nth-child(6) {
-        font-size: 18px;
-        margin-bottom: 60px;
+        font-size: 4.5000vw;
+        margin-bottom: 15.0000vw;
     }
 
     .amenity-sec-wrapper {
@@ -95,11 +95,11 @@
 
     .amenity-sec-wrapper__outDoorStage__info infoText {
         width: 100%;
-        margin: 20px 0 80px;
+        margin: 5.0000vw 0 20.0000vw;
     }
 
     .infoText > p:nth-child(2) {
-        font-size: 30px;
+        font-size: 7.5000vw;
     }
 
     .infoBox {
@@ -114,24 +114,24 @@
 
     .infoText {
         width: 100%;
-        margin: 20px 0 80px;
+        margin: 5.0000vw 0 20.0000vw;
     }
 
     .infoText--right {
-        padding-left: 0px;
+        padding-left: 0;
     }
 
     .infoText--left {
-        padding-right: 0px;
+        padding-right: 0;
     }
 
     .infoBox > div[class*="__img"] {
-        height: 150px;
+        height: 37.5000vw;
     }
 
     .swiper-container {
         width: 100%;
-        height: 150px;
+        height: 37.5000vw;
     }
 
     .amenity-sec-wrapper__pool {
@@ -141,5 +141,4 @@
     .amenity-sec-wrapper__concertHall {
         flex-direction: column-reverse;
     }
-
 }
