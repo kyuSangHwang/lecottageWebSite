@@ -46,6 +46,15 @@ $(document).ready(function() {
                 }, function(error) {
                     console.log('FAILED...', error);
                 });
+
+            emailjs.send('service_l7uya7b', 'template_yce5r24', templateParams)
+                //emailjs.send('service ID', 'template ID', 보낼 내용이 담긴 객체)
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                }, function(error) {
+                    console.log('FAILED...', error);
+                });
+
         }
     });
 
